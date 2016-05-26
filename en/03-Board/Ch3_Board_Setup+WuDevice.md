@@ -1,0 +1,3 @@
+# Building IoT Boards for WuKong
+
+Many IoT boards and devices are now  available on the market. Each  IoT device or sensing board must be pre-configured by the WuKong middleware before they can communicate with the WuKong Master and other devices. In this chapter, we present the set up procedure for four commonly available boards: **[Intel Edison](Ch3_Board_Setup_for_Intel_Edison.md)**, **[Intel Galileo Gen2](Ch3_Board_Setup_for_Intel_Galileo_Gen_2.md)**, **[Raspberry Pi 2](Ch3_Boardsetup_for_Raspberry_Pi_Board.md)**, and **[Arduino]()**. For all boards except Arduino, the vendor-supported Linux OS must be installed first. The boards also must be set up to run Python and OpenSSL.
