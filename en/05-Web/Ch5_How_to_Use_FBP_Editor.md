@@ -23,4 +23,4 @@
   4.  [Application Store](Ch5_Application_Store.md): To create the collection of  your FBP applications and make them available for sharing.    
 
  
- ![](img/FBP_editor_layout.png)
+ ![](FBP_editor_layout.png)

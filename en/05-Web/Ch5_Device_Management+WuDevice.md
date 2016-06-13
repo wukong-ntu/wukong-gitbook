@@ -9,7 +9,7 @@
 
    1.  To add a new device, click **Add Node** button. This action will put the master program in **ADD MODE** as the message shows "ready to ADD" 
 
-    ![](../img/Intel_Sound_of_Ch4/9.png)
+    ![](../Ch4/Intel_Sound/9.png)
    
   2.  Start the device program and let it to enter learning mode. This step depends on which type of device program is going to run.   
   
@@ -34,13 +34,13 @@
       ```  
   3.  Press **Stop to complete operation** to let master program back to **STOP MODE**     
  
-     ![](../img/Intel_Sound_of_Ch4/11.png)
+     ![](../Ch4/Intel_Sound/11.png)
 
 *  How to Remove devices from the WuKong System    
 
    1.  To remove a device, click **Remove Node** button. This action will put the master program in **DELETE MODE** as the message shows "ready to DELETE" 
 
-    ![](../img/Intel_Sound_of_Ch4/35.png)
+    ![](../Ch4/Intel_Sound/35.png)
    
   2.  Restart the device program and let it to enter learning mode. This step depends on which type of device program is going to restart.   
   
@@ -64,24 +64,24 @@
       #The network interface for Intel Edison is wlan0, and for Intel Galielo is wlp1s0    
       #Wait for the message showing "STOP" to terminate the program    
       ```  
-      ![](../img/Intel_Sound_of_Ch4/36.png)
+      ![](../Ch4/Intel_Sound/36.png)
       
   3.  Press **Stop to complete operation** to let master program back to **STOP MODE**     
  
-     ![](../img/Intel_Sound_of_Ch4/37.png)
+     ![](../Ch4/Intel_Sound/37.png)
     
     
 *  How to Set Location for Each Device         
   
    Modify the device location and press Set Location button to restore
  
- ![](../img/LED_Control_of_Ch4/27.png)
+ ![](../Ch4/LED_Control/27.png)
  
  
  
 *  How to Discover Devices   
 
-   ![](../img/LED_Control_C_of_Ch4/c_21.png)
+   ![](../Ch4/LED_Control_C/c_21.png)
 
   
 
@@ -91,4 +91,4 @@
 
    Press **Details** button   
 
-   ![](../img/LED_Control_of_Ch4/28.png)
+   ![](../Ch4/LED_Control/28.png)

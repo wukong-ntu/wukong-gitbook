@@ -4,28 +4,25 @@
 <!--
 *This section  is revised from [PREVIOUS WUKONG UI MANUAL](https://docs.google.com/document/d/1d06id4TxZu5Cp6MvyJ4-2rgaHDvMKR29IIUpdW72_IY/edit#).*
 -->
-Click the **Application Management** top menu. It will show a list of existing applications. We can add a new application using the **Create New** button, or we can delete an application by clicking the ![](img/FBP/7.png)  symbol on the right-hand side. After creating a new application, we can click on its name to edit the application.  
+Click the **Application Management** top menu. It will show a list of existing applications. We can add a new application using the **Create New** button, or we can delete an application by clicking the ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/7.png)  symbol on the right-hand side. After creating a new application, we can click on its name to edit the application.  
 
-![](img/FBP/0.png)
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/0.png)
 
 *  How to Add Components   
 
   To add components to an FBP, first click on the WuClasses tab at the left-hand side menu to list all available components in the WuKongStandardLibrary.xml. Next, scroll down the list to find the right component and press the **Add** button to generate a new instance of the component on the canvas. The figure below shows the canvas after adding a Light_Sensor component. 
   
-  
-
-  ![](img/FBP/1.png)
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/1.png)
 
  The Light_Sensor component has two properties. Input properties are displayed with gray color; in this case, a “refresh rate” property specifies how often the sensor needs to take a new measurement (in milliseconds). Output properties are displayed with white color; in this case, the current sensor value represents the measured light sensor data.  
  
- In the following example we will create a simple application to turn on a light if the light sensor’s value drops below a certain value. For this application we need 4 components:  
-  1. A Light Sensor component: This will return a value in the range of 0 to 255.
-  2. A Threshold component: This will compare the light sensor’s value to the desired minimum light value
-  3. A Slider component: This will provide the Threshold component with it’s threshold value. 
-  4. A Light Actuator: This represents a lamp. 
-    
-    ![](img/FBP/2.png)  
-    
+ In the following example we will create a simple application to turn on a light if the light sensor’s value drops below a certain value. For this application we need 4 components:   
+  1. A Light Sensor component: This will return a value in the range of 0 to 255.  
+  2. A Threshold component: This will compare the light sensor’s value to the desired minimum light value  
+  3. A Slider component: This will provide the Threshold component with it’s threshold value.   
+  4. A Light Actuator: This represents a lamp.  
+  
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/2.png)  
     
 *  How to Create Links   
 
@@ -35,9 +32,9 @@ Click the **Application Management** top menu. It will show a list of existing a
   3. When a link is generated, draw the cursor to the target property and click on it.
   4. Last, a pop-up screen will be displayed to confirm which properties of the source and target component are going to be linked.  
   
-  The picture below shows the canvas after adding all the required components, and the process of creating the link between the Slider’s output value property and the Threshold’s threshold property. 
+  The picture below shows the canvas after adding all the required components, and the process of creating the link between the Slider’s output value property and the Threshold’s threshold property.  
 
-   ![](img/FBP/4.png)  
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/4.png)  
    
 
 *  How to Set the Location  
@@ -46,11 +43,11 @@ Click the **Application Management** top menu. It will show a list of existing a
 
    To set a component’s location, move the cursor around the **Location** blank until a **Tree Node** button is shown up as below. 
    
-   ![](img/FBP/8.png)    
+   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/8.png)    
    
    Click on the **Tree Node** button and a pop-up screen will be prompt to let you select location for each component.  
 
-   ![](img/FBP/9.png)  
+   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/9.png)  
 
 
 ###Deploying an Application
@@ -60,7 +57,7 @@ After an application has been defined, a user may want to deploy it in his netwo
 Deploying an application consists of three steps that will be done by the master automatically in the future, but are currently separated to allow for more control over the process and to show the intermediate results.
 These three steps are shown as three buttons in the **Application** tab.
 
-![](img/FBP/11.png)  
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/11.png)  
 
 
 *  First Step - Current Node   
@@ -71,7 +68,7 @@ These three steps are shown as three buttons in the **Application** tab.
   
   If one suspects that the discovery result does not reflect the current device setup, then one could go back to the **Device Management** page to redo the discovery.  
 
-  ![](img/FBP/13.png)
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/13.png)
   
   
 *  How to Map  
@@ -83,14 +80,14 @@ These three steps are shown as three buttons in the **Application** tab.
   2. Node Id contains the destination node id that the corresponding component will be deployed to
   3. Port Number is the port number the component will take on the destination node.
 
-  ![](img/FBP/12.png)
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/12.png)
 
 
 *  How to Deploy  
   
   After a mapping has been made, the application can be deployed by pressing the **"Deploy"** button. This may take up to half a minute. When the process is finished, a log will be printed showing all the internal steps the master takes to compile the application and upload it to the nodes.  
 
-  ![](img/FBP/14.png)
+  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/14.png)
 
 
 
