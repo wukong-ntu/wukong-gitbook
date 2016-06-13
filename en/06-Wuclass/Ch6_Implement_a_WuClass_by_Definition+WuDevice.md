@@ -13,7 +13,7 @@ Currently, WuKong has been ported to several platforms including Intel Edison, I
 | Raspberry Pi | <*path_of_source_code*>/wukong-darjeeling/wukong/gateway/udpwkpf/ | <*path_of_source_code*>/wukong-darjeeling/src/lib/wkpf/c/posix.mraa.raspberrypi/native_wuclasses/ |  
    
    
-Once the WuClass has been implemented in the corresponding path, we can modify the enable_wuclasses.xml file and build the darjeeling ELF file again. With this new ELF file, the device will have a capability of the new WuClass so that a new application of this new WuClass can be deployed to the device just as we have done in the [chapter 4](../04-Examples/Ch4_The_First_Example.md).
+Once the WuClass has been implemented in the corresponding path, we can modify the enable_wuclasses.xml file and build the darjeeling ELF file again. With this new ELF file, the device will have a capability of the new WuClass so that a new application of this new WuClass can be deployed to the device just as we have done in the [chapter 4](../Ch4/Ch4_The_First_Example.md).
 
 
 
