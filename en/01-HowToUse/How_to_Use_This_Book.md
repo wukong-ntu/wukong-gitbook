@@ -29,15 +29,14 @@ WuKong is a distributed middleware consisting of three system components: Master
 
 Figure 1(a-c) show these possible configurations for WuKong systems. A WuKong-based IoT application can be run using only a Linux-based computer or server, with Master, gateway, and virtual devices all on the same machine (Figure 1a). Some WuKong-based IoT applications may be run on several physical sensing devices and a Linux server running Master and gateway (Figure 1b). A full scale WuKong system may have a dedicated Master running on a (local or cloud) server, several gateway units each managing devices on different subnets or protocols (e.g. WiFi, ZWave, Zigbee), and many IoT devices running on physical boards and/or virtual software modules on servers (Figure 1c). 
 
-![](fig1a.png)
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/01-HowToUse/fig1a.png)
 
 
 
-![](fig1b.png)
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/01-HowToUse/fig1b.png)
 
-![](fig1c.png)
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/01-HowToUse/fig1c.png)
 
 For information on how to run a WuKong-based IoT application using only Linux-based computers, please read Chapters 2, 4.1, 5, and 6.
 
 For information on how to run a WuKong-based IoT application both on Linux-based computers and IoT boards, please read Chapters 2, 3, 4.2, 5, and 6.  
-

@@ -10,14 +10,14 @@
         git clone http://github.com/wukong-m2m/wukong-darjeeling    
         ```
         
-        ![](img/c_1.png)  
+        ![](c_1.png)  
 
     *  Build infuser
         ```bash
         cd <path_of_source_code>/wukong-darjeeling/src/infuser/
         gradle
         ```
-        ![](img/LED_Control_C/c_2.png)
+        ![](LED_Control_C/c_2.png)
         
     *  Copy a configuration file for WuKong Master  
         ```bash
@@ -27,14 +27,14 @@
 
     *  Check IP address of your PC  
      
-        ![](img/LED_Control_C/c_3.png)
+        ![](LED_Control_C/c_3.png)
 
     *  Run Wukong Master    
         ```bash
         cd <path_of_source_code>/wukong-darjeeling/wukong/master/
         python master_server.py
         ```
-        ![](img/LED_Control_C/c_4.png)
+        ![](LED_Control_C/c_4.png)
 
 *  **For WuKong Gateway**  
     *  Use SSH command to access to Intel Edison board  
@@ -48,7 +48,7 @@
        ```bash
        git clone http://github.com/wukong-m2m/wukong-darjeeling
        ```
-       ![](img/LED_Control_C/c_5.png)
+       ![](LED_Control_C/c_5.png)
 
     *  Copy a configuration file for WuKong Gateway  
         ```bash
@@ -58,7 +58,7 @@
         
  *  Check IP address and network interface of Intel Edison board as below.   
  
-      ![](img/LED_Control_C/c_6.png)
+      ![](LED_Control_C/c_6.png)
 
  *  Configure gtwconfig.py according to the above information
  
@@ -68,14 +68,14 @@
      # Change MASTER_IP to IP address of your PC
      # Change TRANSPORT_INTERFACE_ADDR to network interface of Intel Edison board
      ```
-      ![](img/LED_Control/15.png)
+      ![](LED_Control/15.png)
 
   *   Run Wukong Gateway    
       ```bash
       cd <path_of_source_code>/wukong-darjeeling/wukong/gateway/
       python start_gateway.py
       ```
-      ![](img/LED_Control/16.png)
+      ![](LED_Control/16.png)
 
 
 *  **For Intel Edison board**  
@@ -95,7 +95,7 @@
       vim enabled_wuclasses.xml  
       ```
       
-      ![](img/LED_Control_C/c_11.png)   
+      ![](LED_Control_C/c_11.png)   
       
    *  Compile and build WuKong source code    
       ```bash
@@ -109,7 +109,7 @@
       scp -r darjeeling/ <Device name of Intel Edison>@<IP address of Intel Edison board>:/
       ```
       
-      ![](img/LED_Control_C/c_14.png)  
+      ![](LED_Control_C/c_14.png)  
 
 ####**Device Management**    
 
@@ -117,17 +117,17 @@
 
     *  Use Chrome browser to open FBP editor: http://localhost:5000
         (Currently, only Chrome browser supports FBP editor)   
-        ![](img/LED_Control/19.png)
+        ![](LED_Control/19.png)
 
     *  Enter Device Management page and check initial state  
         
-        ![](img/LED_Control/20.png)
+        ![](LED_Control/20.png)
 
     *  Click Add Nodes button to be ready to include Intel Edison board to WuKong Master  
     
-        ![](img/LED_Control/201.png)
+        ![](LED_Control/201.png)
         
-        ![](img/LED_Control/21.png)
+        ![](LED_Control/21.png)
 
     *  Use SSH command to access to the Intel Edison board   
     
@@ -153,7 +153,7 @@
           
     *  Once WuKong Master has found Intel Edison board, press "Stop to complete operation"           
      
-        ![](img/LED_Control_C/c_18.png)
+        ![](LED_Control_C/c_18.png)
 
     *  Restart darjeeling ELF file and back to running mode  
        ```bash
@@ -163,23 +163,23 @@
 
     *  Check device management list again   
 
-        ![](img/LED_Control_C/c_21.png)
+        ![](LED_Control_C/c_21.png)
 
     *  Modify the device location and press Set Location button to restore
 
-        ![](img/LED_Control/27.png)
+        ![](LED_Control/27.png)
 
     *  (Optional) Press Details button to check sensor profile of this Python program
 
-        ![](img/LED_Control/28.png)
+        ![](LED_Control/28.png)
 
 ####**Application Deployment**  
 
 *  After adding Intel Edison board to WuKong Master, we are ready to draw a LED control application using FBP editor and deploy this application to Intel Edison board. Please follow the instructions of [APPLICATION MANAGEMENT](../Ch5/Ch5_Application_Management.md).   
 
 *  After deploying application, prepare a short metal wire. Plug one end point of wire to DIGITAL pin5 of Intel Edison board, while toggle the other end point between power 5V and GND. This action used to emulate pressing a real button. Then you can see the LED on intel Edison board blink as shown below.    
-![](img/45.png)  
-![](img/46.png)  
+![](45.png)  
+![](46.png)  
      
 
     

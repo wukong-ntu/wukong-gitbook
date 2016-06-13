@@ -27,17 +27,22 @@ sudo apt-get update && sudo apt-get install oracle-java7-installer
 
   Download gradle 2.4 [HERE](https://services.gradle.org/distributions/gradle-2.4-all.zip) and extract it in a directory, for example, ~/gradle-2.4  
   Append this gradle directory path to environment variable PATH as below.  
+  
   ```bash  
   vim ~/.bashrc  
   ```
+  
   Add 
+  
   ```bash
   export PATH=$PATH:~/gradle-2.4/bin
   ```
+  
   after the last line of bash startup file ~/.bashrc, and then use the source command to execute the script  
-```bash  
-source ~/.bashrc
-``` 
+
+  ```bash  
+  source ~/.bashrc
+  ``` 
 
 * **Install Python Tools**  
 ```bash  

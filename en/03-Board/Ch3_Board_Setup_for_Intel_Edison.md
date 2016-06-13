@@ -37,15 +37,15 @@ configure_edison --setup
  
   * When prompted, you must enter a chosen password so that the board can be accessed through the **ssh** command later on.   
   
-    ![](img/fig3-1-0.png)
+    ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/03-Board/fig3-1-0.png)
 
   * When prompted, you can enter a name for the board, or the name **"root"** will be given if it is left empty.  
  
-   ![](img/fig3-1-1.png)
+   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/03-Board/fig3-1-1.png)
 
   * The next step is the WiFi configuration. Type "Y" to setup WiFi and the board will start to scan network services. Once the board finishes scanning, choose a network SSID and then enter the network password if required. The following screen shows an example setting.
 
-    ![](img/fig3-1-2.png)
+    ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/03-Board/fig3-1-2.png)
   * If you need to connect to a different network service, you can later use the following command to configure it again:  
 ```bash
 configure_edison --wifi
@@ -91,7 +91,7 @@ pip install netifaces
   * Clone the source code and download to your preferred working directory on the IoT board.
 
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling 
+    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling
     ```   
 
 
