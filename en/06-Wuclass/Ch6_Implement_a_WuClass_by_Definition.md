@@ -1,7 +1,7 @@
 ##6.3 Implementing a WuClass from Definition
 
 
-In this section, we use the LED-controlled FBP defined in  [Chapter 4](../Ch4/Ch4_LED_Control_Using_Python_Program.md) as an example to explain the basic template of the Python program for each device. This template can be applied to Edison, Galileo and Raspberry Pi, to include some WuClass definitions of WuKongStandardLibrary.xml as mentioned in the previous section. Once an WuClass has been implemented according to the template, we can add this WuClass as a device in the same manner as [Section 5.2](../Ch5/Ch5_Device_Management.md).
+In this section, we use the LED-controlled FBP defined in  [Section 4.2](../04-Examples/Ch4_LED_Control_Using_Python_Program.md) as an example to explain the basic template of the Python program for each device. This template can be applied to Edison, Galileo and Raspberry Pi, to include some WuClass definitions of WuKongStandardLibrary.xml as mentioned in the previous section. Once an WuClass has been implemented according to the template, we can add this WuClass as a device in the same manner as [Section 5.2](../05-Web/Ch5_Device_Management.md).
 
 
 * ###**WuKong Device Python Template**  
