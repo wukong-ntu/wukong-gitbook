@@ -59,7 +59,7 @@ According to the connection types of Grove modules, we can divide them into foll
 
 All of these WuClasses for Grove starter kit can be found in  
 ```
-cd <source code>/wukong-darjeeling/wukong/gateway/udpwkpf/
+cd https://github.com/wukong-m2m/wukong-darjeeling/tree/release0.4/wukong/gateway/udpwkpf
 ```
 
 ####Pin Numbering  
