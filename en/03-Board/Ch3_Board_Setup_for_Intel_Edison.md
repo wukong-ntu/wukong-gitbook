@@ -20,10 +20,10 @@ There are **four** steps to set up an Intel Edison as a WuKong device.
  There are two types of extension boards designed for the Intel Edison module: the Arduino extension board, and the mini breakout board. In this chapter, we use the Arduino extension board since it is more convenient to connect sensor kit without soldering. 
  
  Please see the following website on how to assemble an Intel Edison board:  
- https://software.intel.com/en-us/articles/assemble-intel-edison-on-the-arduino-board  
+ https://software.intel.com/en-us/assembling-intel-edison-board-with-arduino-expansion-board  
  
  After that, you can see the following website on how to set up a serial terminal to communicate with the board.  
- https://software.intel.com/en-us/get-started-edison-linux-step3
+ https://software.intel.com/en-us/setting-up-serial-terminal-intel-edison-board
  
 
 * **
