@@ -26,6 +26,5 @@ When a RealSense camera is plugged in a USB port, an interactive window can be s
  
 * ###FBP Using Intel RealSense Camera     
 We now show a simple FBP that uses RealSense Gesture output to control several applications running on a computer. In the following figure, the RealSense WuClass produces two output properties, mode and gesture, that will be linked to a switch component. The switch component then uses the gesture readings to issue control commands to one of the three applications, video player, Hangout communication, and LED light. 
-
 ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/FBP_RealSense.png)
 
