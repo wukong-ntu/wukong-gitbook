@@ -34,17 +34,17 @@ The Number component is mainly  for debug purposes. It will display the received
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass2.png)  
  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass3.png)
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no1.png)render_GET is a method to be implemented to support GET requests from clients. And render_GET returns string according to our implementation as a response.  
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no1.png)render_GET is a method to be implemented to support GET requests from clients. And render_GET returns string according to our implementation as a response.  
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no2.png)We can get the values of each http request by parsing the arguments.   
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no2.png)We can get the values of each http request by parsing the arguments.   
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no3.png)When we use these flags for the addClass function, the class will be used to create new WuObjects. That's why when we add only one UISlider WuClass, we still can have two UISliders in an FBP.    
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no3.png)When we use these flags for the addClass function, the class will be used to create new WuObjects. That's why when we add only one UISlider WuClass, we still can have two UISliders in an FBP.    
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no4.png)Since we can have several identical FBP components in one FBP, we must decide which component is requested by the client.      
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no4.png)Since we can have several identical FBP components in one FBP, we must decide which component is requested by the client.      
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no5.png)The device property and port property of UISlider are used to find the requested one. That is why we have to fill the initial values when drawing a FBP.  
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no5.png)The device property and port property of UISlider are used to find the requested one. That is why we have to fill the initial values when drawing a FBP.  
 
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no6.png)putChild can be used to create the URL name for a Resource instance.  
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no6.png)putChild can be used to create the URL name for a Resource instance.  
   
-![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no7.png)Specify the port to serve http get request. In this case, http://localhost:11006/slider is the base to make the http GET request.   
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no7.png)Specify the port to serve http get request. In this case, http://localhost:11006/slider is the base to make the http GET request.   
 
