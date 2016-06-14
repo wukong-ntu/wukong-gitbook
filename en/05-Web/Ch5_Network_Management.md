@@ -1,6 +1,6 @@
 
 ##5.1 Network Management  
-Before a WuKong application can be deployed, we must set up the network connections among Master, gateways and devices so that they can communicate with each other correctly. As we have discussed in [Section 1.1](../Ch1/How_to_Use_This_Book.md), a WuKong system has three types of system components: Master, gateway, and node (physical or virtual device). Each component may be run on a specific hardware platform in a **local area network** or on **different subnets**. In this section, we first present system components running in the same local area network. Later, we will include system components running on different subnets. 
+Before a WuKong application can be deployed, we must set up the network connections among Master, gateways and devices so that they can communicate with each other correctly. As we have discussed in [Section 1.1](../01-HowToUse/How_to_Use_This_Book.md), a WuKong system has three types of system components: Master, gateway, and node (physical or virtual device). Each component may be run on a specific hardware platform in a **local area network** or on **different subnets**. In this section, we first present system components running in the same local area network. Later, we will include system components running on different subnets. 
 
 * **
 #### All Components in the Same Local Area Network  
