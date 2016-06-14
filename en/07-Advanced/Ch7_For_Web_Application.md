@@ -15,12 +15,10 @@ The Number component is mainly  for debug purposes. It will display the received
   
   2. Initial value setting  
   To specify which UISlider is to be used, each UISlider will be given a different pair (device, port) of initial (device, port) values. The values for different components must be different. 
-  
 ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/2.png)
 ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/3.png)
   
   3. To see how the data flow between components, we add a ShowAll class which, when it receives a request from a browser,  shows all current values of all component on the browser (the left side of the figure below). 
-  
 ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/4.png)   
 
   4. When a user uses the url to send a request to change the output number of the upper UISlider, we can see the data propagation from the ShowAll request just mentioned. In this case, it sends a request to set the threshold property to 100.  
