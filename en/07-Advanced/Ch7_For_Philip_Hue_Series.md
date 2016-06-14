@@ -34,7 +34,7 @@ vim udpdevice_philip_hue_*.py
 
        ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no4.png)The range of rgb light intensity is from 0 to 254. The number filled in this blank will be set as the default value for the FBP component.      
    
-   5.  Deploy this FBP according to [Section 5.3](../Ch5/Ch5_Application_Management.md)   
+   5.  Deploy this FBP according to [Section 5.3](../05-Web/Ch5_Application_Management.md)   
 
 ###Implementing Web Client WuClass      
 In the following, we're going to see how web client WuClass is implemented to control the color and on/off state of Philip Hue. Through web client wuclass, we can also connect to other IoT products which provide HTTP API as Philip Hue. Since Hue has a series of products and all of them can be controlled by the same HTTP API, we create an utility file with commonly used classes to avoid repetition codes. This utility file is philip_hue_utils.py as below.      
