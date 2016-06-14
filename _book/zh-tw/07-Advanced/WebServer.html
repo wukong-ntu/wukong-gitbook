@@ -1,0 +1,746 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Web伺服器端WuClass | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="WuKong Project">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../07-Advanced/WebClient.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.3"
+        data-chapter-title="Web伺服器端WuClass"
+        data-filepath="07-Advanced/WebServer.md"
+        data-basepath=".."
+        data-revision="Tue Jun 14 2016 17:49:05 GMT+0800 (CST)"
+        data-innerlanguage="zh-tw">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="version_history.html">
+            
+                
+                    <a href="../version_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        更新日誌
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第1章: 悟空中介軟體簡介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01-HowToUse/index.html">
+            
+                
+                    <a href="../01-HowToUse/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        如何使用這本書
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02-Server/index.html">
+            
+                
+                    <a href="../02-Server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第2章: 設定伺服器環境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03-Board/index.html">
+            
+                
+                    <a href="../03-Board/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第3章: 物聯網開發板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03-Board/Edison.html">
+            
+                
+                    <a href="../03-Board/Edison.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        設定Intel Edison
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-Board/Galileo.html">
+            
+                
+                    <a href="../03-Board/Galileo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        設定Intel Galileo Gen 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-Board/RPi.html">
+            
+                
+                    <a href="../03-Board/RPi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        設定Raspberry Pi Board
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04-Examples/index.html">
+            
+                
+                    <a href="../04-Examples/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第4章: 範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04-Examples/Music.html">
+            
+                
+                    <a href="../04-Examples/Music.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        電腦上的範例 - 音樂播放器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04-Examples/OP1/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP1/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="04-Examples/OP1/device.html">
+            
+                
+                    <a href="../04-Examples/OP1/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="04-Examples/OP1/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP1/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04-Examples/OP1/run.html">
+            
+                
+                    <a href="../04-Examples/OP1/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="04-Examples/OP1/issue.html">
+            
+                
+                    <a href="../04-Examples/OP1/issue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        尋找裝置問題
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04-Examples/LED.html">
+            
+                
+                    <a href="../04-Examples/LED.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        物聯網開發板 - 控制LED
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="04-Examples/OP2/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP2/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="04-Examples/OP2/device.html">
+            
+                
+                    <a href="../04-Examples/OP2/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="04-Examples/OP2/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP2/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="04-Examples/OP2/run.html">
+            
+                
+                    <a href="../04-Examples/OP2/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05-Web/index.html">
+            
+                
+                    <a href="../05-Web/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章: 悟空管理介面
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05-Web/Network.html">
+            
+                
+                    <a href="../05-Web/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        網路管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05-Web/Device.html">
+            
+                
+                    <a href="../05-Web/Device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        裝置管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05-Web/App.html">
+            
+                
+                    <a href="../05-Web/App.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        應用程式管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05-Web/AppStore.html">
+            
+                
+                    <a href="../05-Web/AppStore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        應用程式商店
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06-Wuclass/index.html">
+            
+                
+                    <a href="../06-Wuclass/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章: 動手寫悟空類別元件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06-Wuclass/Framework.html">
+            
+                
+                    <a href="../06-Wuclass/Framework.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        悟空屬性架構
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06-Wuclass/Definition.html">
+            
+                
+                    <a href="../06-Wuclass/Definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        定義
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06-Wuclass/Implement.html">
+            
+                
+                    <a href="../06-Wuclass/Implement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        實作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06-Wuclass/Grove.html">
+            
+                
+                    <a href="../06-Wuclass/Grove.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        範例 - Grove 模組
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07-Advanced/index.html">
+            
+                
+                    <a href="../07-Advanced/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章: 進階範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07-Advanced/TCP.html">
+            
+                
+                    <a href="../07-Advanced/TCP.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        TCP伺服器連線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07-Advanced/WebClient.html">
+            
+                
+                    <a href="../07-Advanced/WebClient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Web客戶端WuClass
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.3" data-path="07-Advanced/WebServer.html">
+            
+                
+                    <a href="../07-Advanced/WebServer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Web伺服器端WuClass
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="73-&#x4F7F;&#x7528;&#x7DB2;&#x9801;&#x4F3A;&#x670D;&#x5668;web-server&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;">7.3 &#x4F7F;&#x7528;&#x7DB2;&#x9801;&#x4F3A;&#x670D;&#x5668;(Web Server)&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;</h2>
+<p>&#x5728;&#x9019;&#x500B;&#x7AE0;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x5148;&#x90E8;&#x7F72;&#x4E00;&#x500B;&#x6709;&#x4F7F;&#x7528;&#x7DB2;&#x9801;&#x4F3A;&#x670D;&#x5668;&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#xFF0C;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x7684;&#x540D;&#x7A31;&#x662F;UISlider&#xFF0C;&#x610F;&#x601D;&#x662F;UI&#x4ECB;&#x9762;&#x7684;&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(&#x4EE5;&#x4E0B;&#x7A31;&#x7232;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;)&#xFF0C;&#x7576;&#x4E86;&#x63A5;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x63A5;&#x8005;&#x8AAA;&#x660E;&#x5982;&#x4F55;&#x5BE6;&#x4F5C;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x3002;      </p>
+<ul>
+<li><h3 id="&#x4F7F;&#x7528;ui&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;">&#x4F7F;&#x7528;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;</h3>
+<ol>
+<li><p>&#x9019;&#x500B;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x5171;&#x6709;&#x4E09;&#x500B;&#x5143;&#x4EF6;&#xFF1A;   </p>
+<ul>
+<li>UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(UISlider)<br>&#x5982;&#x540C;&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(Slider)&#x7684;&#x8F38;&#x51FA;&#x5F9E;&#x96F6;&#x5230;&#x96FB;&#x6E90;&#x96FB;&#x58D3;(vcc)&#x4F0F;&#x7279;&#xFF0C;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x6703;&#x63A5;&#x6536;&#x5F9E;&#x700F;&#x89BD;&#x5668;&#x50B3;&#x4F86;&#x7684;&#x6578;&#x5B57;(number)&#xFF0C;&#x4E26;&#x5C07;&#x9019;&#x500B;&#x6578;&#x5B57;&#x8F49;&#x63DB;&#x6210;&#x77ED;&#x6574;&#x6578;&#xFF0C;&#x77ED;&#x6574;&#x6578;&#x5C31;&#x6210;&#x7232;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x7B2C;&#x4E00;&#x500B;&#x5C6C;&#x6027;(number)&#x7684;&#x503C;&#xFF0C;&#x7576;&#x503C;&#x6539;&#x8B8A;&#x5F8C;&#xFF0C;&#x5C31;&#x6703;&#x6309;&#x7167;&#x8CC7;&#x6599;&#x6D41;&#x88AB;&#x50B3;&#x905E;&#x5230;&#x4E0B;&#x4E00;&#x500B;&#x5C6C;&#x6027;&#x3002;  </li>
+<li>&#x95A5;&#x503C;&#x6BD4;&#x8F03;&#x5668;(Threshold)
+&#x95A5;&#x503C;&#x6BD4;&#x8F03;&#x5668;&#x6703;&#x5C07;&#x5176;&#x7B2C;&#x4E8C;&#x500B;&#x5C6C;&#x6027;(threshold)&#x7684;&#x503C;&#x7576;&#x505A;&#x95A5;&#x503C;&#xFF0C;&#x7528;&#x4F86;&#x548C;&#x7B2C;&#x4E09;&#x500B;&#x5C6C;&#x6027;(value)&#x7684;&#x503C;&#x505A;&#x6BD4;&#x8F03;&#xFF0C;&#x6BD4;&#x8F03;&#x7684;&#x65B9;&#x5F0F;&#x5C07;&#x7531;&#x7B2C;&#x4E00;&#x500B;&#x5C6C;&#x6027;(operator)&#x7684;&#x8A2D;&#x5B9A;&#x4F86;&#x6C7A;&#x5B9A;&#xFF0C;&#x5982;&#x679C;&#x4ED4;&#x7D30;&#x5C0D;&#x7167;&#x5143;&#x4EF6;&#x51FD;&#x5F0F;&#x5EAB;&#x7684;&#x8A71;&#xFF0C;&#x6703;&#x767C;&#x73FE;&#x9019;&#x500B;&#x5C6C;&#x6027;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;&#x662F;&#x5217;&#x8209;&#xFF0C;&#x5176;&#x4E2D;&#x6709;LT(&#x5C0F;&#x65BC;),LTE(&#x5C0F;&#x65BC;&#x548C;&#x7B49;&#x65BC;),GT(&#x5927;&#x65BC;)&#x548C;GTE(&#x5927;&#x65BC;&#x548C;&#x7B49;&#x65BC;)&#x9019;&#x56DB;&#x7A2E;&#x9078;&#x9805;&#xFF0C;&#x9810;&#x8A2D;&#x503C;&#x662F;LT&#xFF0C;&#x6BD4;&#x8F03;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#x6703;&#x7531;&#x7B2C;&#x56DB;&#x500B;&#x5C6C;&#x6027;(output)&#x50B3;&#x905E;&#x4E0B;&#x53BB;&#x3002;    </li>
+<li>&#x6578;&#x503C;&#x6A19;&#x793A;(Number)<br>&#x9019;&#x500B;&#x5143;&#x4EF6;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x4F86;&#x5075;&#x932F;&#xFF0C;&#x5B83;&#x6703;&#x5C07;&#x63A5;&#x6536;&#x5230;&#x7684;&#x503C;&#x986F;&#x793A;&#x5728;&#x57F7;&#x884C;&#x7A0B;&#x5F0F;&#x7684;&#x756B;&#x9762;&#x4E0A;&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/1.png" alt="">  </li>
+</ul>
+</li>
+<li><p>&#x521D;&#x59CB;&#x503C;&#x8A2D;&#x5B9A;<br>&#x7232;&#x4E86;&#x8981;&#x5728;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x500B;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7269;&#x4EF6;&#xFF0C;&#x6211;&#x5011;&#x591A;&#x5B9A;&#x7FA9;&#x4E86;&#x5169;&#x500B;&#x5C6C;&#x6027;&#xFF0C;&#x5206;&#x5225;&#x662F;&#x88DD;&#x7F6E;&#x8B58;&#x5225;&#x865F;(device)&#x8207;&#x57E0;&#x8B58;&#x5225;&#x865F;(port)&#xFF0C;&#x6BCF;&#x500B;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x5728;&#x90E8;&#x7F72;&#x524D;&#x90FD;&#x9700;&#x8A2D;&#x5B9A;&#x9019;&#x5169;&#x500B;&#x5C6C;&#x6027;&#x7684;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5982;&#x6B64;&#x4E00;&#x4F86;&#xFF0C;&#x7576;&#x700F;&#x89BD;&#x5668;&#x50B3;&#x503C;&#x7D66;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x624D;&#x80FD;&#x660E;&#x78BA;&#x5730;&#x6307;&#x5B9A;&#x662F;&#x50B3;&#x7D66;&#x54EA;&#x4E00;&#x500B;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/2.png" alt="">
+<img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/3.png" alt=""></p>
+</li>
+<li><p>&#x7232;&#x4E86;&#x89E3;&#x6578;&#x64DA;&#x5728;&#x8CC7;&#x6599;&#x6D41;&#x7684;&#x50B3;&#x905E;&#x904E;&#x7A0B;&#xFF0C;&#x6211;&#x5011;&#x5728;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x5167;&#x52A0;&#x4E86;&#x4E00;&#x500B;&#x540D;&#x7A31;&#x7232;ShowAll&#x7684;&#x985E;&#x5225;&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x700F;&#x89BD;&#x5668;&#x628A;&#x6BCF;&#x500B;&#x7269;&#x4EF6;&#x5C6C;&#x6027;&#x5373;&#x6642;&#x7684;&#x8B8A;&#x5316;&#x5370;&#x51FA;&#x4F86;&#xFF0C;&#x5982;&#x540C;&#x4E0B;&#x5716;&#x4E2D;&#x7684;&#x5DE6;&#x534A;&#x90E8;&#xFF0C;&#x5728;&#x700F;&#x89BD;&#x5668;&#x7684;&#x7DB2;&#x5740;&#x5217;&#x8F38;&#x5165;localhost:11006/show&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/4.png" alt="">   </p>
+</li>
+<li><p>&#x5728;&#x4E0B;&#x5716;&#x4E2D;&#xFF0C;&#x7576;&#x6211;&#x5011;&#x900F;&#x904E;&#x700F;&#x89BD;&#x5668;&#x50B3;&#x503C;(number)100&#x7D66;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(&#x8F03;&#x4E0A;&#x7684;)&#x6642;&#xFF0C;&#x5F9E;&#x547C;&#x53EB;ShowAll&#x7684;&#x700F;&#x89BD;&#x5668;&#x9801;&#x9762;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x4F86;&#x95A5;&#x503C;&#x6BD4;&#x8F03;&#x5668;&#x7684;&#x95A5;&#x503C;&#x5C6C;&#x6027;(threshold)&#x6539;&#x8B8A;&#x4E86;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x53EF;&#x4EE5;&#x78BA;&#x8A8D;&#x50B3;&#x905E;&#x7684;&#x503C;&#x7232;100&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/5.png" alt="">   </p>
+</li>
+<li><p>&#x7576;&#x6211;&#x5011;&#x900F;&#x904E;&#x700F;&#x89BD;&#x5668;&#x50B3;&#x503C;(number)80&#x7D66;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(&#x8F03;&#x4E0B;&#x7684;)&#x6642;&#xFF0C;&#x5F9E;&#x547C;&#x53EB;ShowAll&#x7684;&#x700F;&#x89BD;&#x5668;&#x9801;&#x9762;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x4F86;&#x95A5;&#x503C;&#x6BD4;&#x8F03;&#x5668;&#x7684;&#x6BD4;&#x8F03;&#x503C;(value)&#x6539;&#x8B8A;&#x4E86;&#xFF0C;&#x63A5;&#x8005;&#xFF0C;&#x6BD4;&#x8F03;&#x5B8C;&#x9019;&#x5169;&#x500B;&#x5C6C;&#x6027;(threshold&#x548C;value)&#x5F8C;&#xFF0C;&#x5C31;&#x628A;&#x6BD4;&#x8F03;&#x7684;&#x7D50;&#x679C;&#x50B3;&#x905E;&#x7D66;&#x6578;&#x5B57;&#x6A19;&#x793A;&#x7269;&#x4EF6;&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/8.png" alt=""></p>
+</li>
+</ol>
+</li>
+<li><h3 id="&#x5BE6;&#x4F5C;ui&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;uislider&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;">&#x5BE6;&#x4F5C;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;(UISlider)&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;</h3>
+<p>UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x7684;&#x5BE6;&#x4F5C;&#x5982;&#x4E0B;&#x5716;&#xFF0C;&#x7531;&#x65BC;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x66F4;&#x65B0;&#x7684;&#x65B9;&#x5F0F;&#x8207;&#x4E4B;&#x524D;&#x4ECB;&#x7D39;&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x4E0D;&#x540C;&#xFF0C;&#x662F;&#x6BCF;&#x7576;&#x6709;&#x700F;&#x89BD;&#x5668;&#x547C;&#x53EB;&#x7684;&#x6642;&#x5019;&#x505A;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x64B0;&#x5BEB;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x6642;&#xFF0C;&#x6211;&#x5011;&#x6C92;&#x6709;&#x4F7F;&#x7528;&#x66F4;&#x65B0;&#x51FD;&#x5F0F;(update function)&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x5C07;&#x8A2A;&#x554F;&#x5C6C;&#x6027;&#x5132;&#x5B58;&#x5340;&#x7684;&#x51FD;&#x5F0F;&#x5BEB;&#x5728;&#x4E0B;&#x5716;&#x7684;render_GET&#x51FD;&#x5F0F;&#x3002;
+<img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass2.png" alt=""><br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass3.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no1.png" alt="">render_GET&#x51FD;&#x5F0F;&#x7684;&#x7528;&#x9014;&#x5728;&#x65BC;&#x56DE;&#x61C9;&#x5BA2;&#x6236;&#x7AEF;&#x7684;HTTP GET&#x8ACB;&#x6C42;&#xFF0C;&#x56DE;&#x50B3;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;&#x662F;&#x5B57;&#x4E32;&#xFF0C;&#x5B57;&#x4E32;&#x7684;&#x5167;&#x5BB9;&#x8996;&#x958B;&#x767C;&#x8005;&#x5BE6;&#x4F5C;&#x800C;&#x5B9A;&#x3002;  </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no2.png" alt="">&#x9019;&#x4E09;&#x884C;&#x7A0B;&#x5F0F;&#x662F;&#x5F9E;HTTP&#x7684;&#x8ACB;&#x6C42;&#x4E2D;&#x628A;&#x95DC;&#x65BC;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x53D6;&#x51FA;&#x3002;     </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no3.png" alt="">&#x7576;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x9019;&#x500B;&#x6A19;&#x8A18;(FLAG_APP_CAN_CREATE_INSTANCE, FLAG_VIRTUAL)&#x4F86;&#x52A0;&#x5165;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x6642;&#xFF0C;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x90E8;&#x7F72;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7684;&#x968E;&#x6BB5;&#xFF0C;&#x88AB;&#x7528;&#x4F86;&#x7522;&#x751F;&#x591A;&#x500B;&#x65B0;&#x7684;&#x609F;&#x7A7A;&#x7269;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x5148;&#x7528;addObject&#x51FD;&#x5F0F;&#x4F86;&#x7522;&#x751F;&#x65B0;&#x7684;&#x609F;&#x7A7A;&#x7269;&#x4EF6;&#x3002;   </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no4.png" alt="">&#x7531;&#x65BC;&#x6C92;&#x6709;&#x4F7F;&#x7528;&#x66F4;&#x65B0;&#x51FD;&#x5F0F;&#xFF0C;&#x609F;&#x7A7A;&#x5C6C;&#x6027;&#x67B6;&#x69CB;&#x4E0D;&#x6703;&#x50B3;&#x8981;&#x88AB;&#x66F4;&#x65B0;&#x7684;&#x7269;&#x4EF6;&#x7D66;render_GET&#xFF0C;&#x65BC;&#x662F;&#x9019;&#x5169;&#x884C;&#x7A0B;&#x5F0F;&#x6BD4;&#x5C0D;&#x540C;&#x4E00;&#x500B;&#x88DD;&#x7F6E;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x609F;&#x7A7A;&#x7269;&#x4EF6;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x5230;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x609F;&#x7A7A;&#x7269;&#x4EF6;&#x7232;&#x6B62;&#x3002;   </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no5.png" alt="">&#x7531;&#x65BC;&#x540C;&#x4E00;&#x500B;&#x88DD;&#x7F6E;&#x4E0A;&#x6709;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x500B;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#xFF0C;&#x65BC;&#x662F;&#x9019;&#x884C;&#x7A0B;&#x5F0F;&#x662F;&#x7528;&#x4F86;&#x7BE9;&#x9078;&#x51FA;&#x6240;&#x6307;&#x5B9A;&#x7684;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#xFF0C;&#x9019;&#x4E5F;&#x662F;&#x6211;&#x5011;&#x5148;&#x524D;&#x9700;&#x8981;&#x8A2D;&#x5B9A;&#x88DD;&#x7F6E;&#x8B58;&#x5225;&#x865F;(device)&#x8207;&#x57E0;&#x8B58;&#x5225;&#x865F;(port)&#x7684;&#x521D;&#x59CB;&#x503C;&#x7684;&#x539F;&#x56E0;&#x3002;      </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no6.png" alt="">putChild&#x51FD;&#x5F0F;&#x662F;&#x7528;&#x4F86;&#x5B9A;&#x7FA9;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x7DB2;&#x5740;&#x5217;&#x95DC;&#x9375;&#x5B57;&#x3002;  </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no7.png" alt="">&#x6A19;&#x793A;&#x54EA;&#x4E00;&#x500B;&#x57E0;&#x6703;&#x7528;&#x4F86;&#x63A5;&#x6536;HTTP GET&#x8ACB;&#x6C42;&#xFF0C;&#x5728;UI&#x65CB;&#x8F49;&#x96FB;&#x4F4D;&#x5668;&#x7684;&#x7BC4;&#x4F8B;&#x4E2D;&#xFF0C;&#x57E0;&#x7684;&#x8B58;&#x5225;&#x78BC;&#x662F;11006&#xFF0C;&#x7DB2;&#x5740;&#x5217;&#x95DC;&#x9375;&#x5B57;&#x662F;slider&#xFF0C;&#x6240;&#x4EE5;<a href="http://localhost:11006/slider" target="_blank">http://localhost:11006/slider</a> &#x662F;&#x50B3;&#x9001;HTTP GET&#x8ACB;&#x6C42;&#x7684;&#x6700;&#x524D;&#x6BB5;&#x7684;&#x7DB2;&#x5740;&#x5217;&#x3002;  </p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../07-Advanced/WebClient.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Web客戶端WuClass"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

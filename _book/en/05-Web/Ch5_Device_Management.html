@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Device Management | The WuKong project</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="WuKong Project">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../05-Web/Ch5_Application_Management.html" />
+    
+    
+    <link rel="prev" href="../05-Web/Ch5_Network_Management.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.2"
+        data-chapter-title="Device Management"
+        data-filepath="05-Web/Ch5_Device_Management.md"
+        data-basepath=".."
+        data-revision="Tue Jun 14 2016 17:49:05 GMT+0800 (CST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="version_history.html">
+            
+                
+                    <a href="../version_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Version History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Chapter 1: Introduction
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01-HowToUse/How_to_Use_This_Book.html">
+            
+                
+                    <a href="../01-HowToUse/How_to_Use_This_Book.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        How to Use This Book
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02-Server/Ch2_WuKong_Environment_Setup.html">
+            
+                
+                    <a href="../02-Server/Ch2_WuKong_Environment_Setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Chapter 2: Preparing the Development Environment on Server
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03-Board/Ch3_Board_Setup.html">
+            
+                
+                    <a href="../03-Board/Ch3_Board_Setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Chapter 3: Preparing IoT Boards
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03-Board/Ch3_Board_Setup_for_Intel_Edison.html">
+            
+                
+                    <a href="../03-Board/Ch3_Board_Setup_for_Intel_Edison.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Board Setup for Intel Edison
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-Board/Ch3_Board_Setup_for_Intel_Galileo_Gen_2.html">
+            
+                
+                    <a href="../03-Board/Ch3_Board_Setup_for_Intel_Galileo_Gen_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Board Setup for Intel Galileo Gen 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-Board/Ch3_Boardsetup_for_Raspberry_Pi_Board.html">
+            
+                
+                    <a href="../03-Board/Ch3_Boardsetup_for_Raspberry_Pi_Board.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Board Setup for Raspberry Pi Board
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04-Examples/Ch4_The_First_Example.html">
+            
+                
+                    <a href="../04-Examples/Ch4_The_First_Example.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Chapter 4: The First Examples
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04-Examples/Ch4_Play_Intel_Theme_Music.html">
+            
+                
+                    <a href="../04-Examples/Ch4_Play_Intel_Theme_Music.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Computer Only: Play Simple Music
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04-Examples/OP1/Ch4_part_1_start_master_and_gateway_program.html">
+            
+                
+                    <a href="../04-Examples/OP1/Ch4_part_1_start_master_and_gateway_program.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Step 1. Start Master and Gateway
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="04-Examples/OP1/Ch4_part_2_include_new_device.html">
+            
+                
+                    <a href="../04-Examples/OP1/Ch4_part_2_include_new_device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        Step 2. Include New Device
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="04-Examples/OP1/Ch4_part_3_deploy_dbp_application.html">
+            
+                
+                    <a href="../04-Examples/OP1/Ch4_part_3_deploy_dbp_application.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        Step 3. Build an FBP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04-Examples/OP1/Ch4_part_4_testing.html">
+            
+                
+                    <a href="../04-Examples/OP1/Ch4_part_4_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        Step 4. Running the Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="04-Examples/discovery_issue.html">
+            
+                
+                    <a href="../04-Examples/discovery_issue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        Discovery Issues
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04-Examples/Ch4_LED_Control_Using_Python_Program.html">
+            
+                
+                    <a href="../04-Examples/Ch4_LED_Control_Using_Python_Program.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        LED Control on IoT Board with Linux Microprocessor
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="04-Examples/OP2/Ch4_part_1_start_master_and_gateway_program.html">
+            
+                
+                    <a href="../04-Examples/OP2/Ch4_part_1_start_master_and_gateway_program.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        Step 1. Start Master and Gateway
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="04-Examples/OP2/Ch4_part_2_include_new_device.html">
+            
+                
+                    <a href="../04-Examples/OP2/Ch4_part_2_include_new_device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        Step 2. Include a New Device
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="04-Examples/OP2/Ch4_part_3_deploy_dbp_application.html">
+            
+                
+                    <a href="../04-Examples/OP2/Ch4_part_3_deploy_dbp_application.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        Step 3. Build and Deploy FBP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="04-Examples/OP2/Ch4_part_4_testing.html">
+            
+                
+                    <a href="../04-Examples/OP2/Ch4_part_4_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        Step 4. Running the Application
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05-Web/Ch5_How_to_Use_FBP_Editor.html">
+            
+                
+                    <a href="../05-Web/Ch5_How_to_Use_FBP_Editor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Chapter 5: WuKong Web Interface
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05-Web/Ch5_Network_Management.html">
+            
+                
+                    <a href="../05-Web/Ch5_Network_Management.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Network Management
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="05-Web/Ch5_Device_Management.html">
+            
+                
+                    <a href="../05-Web/Ch5_Device_Management.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Device Management
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05-Web/Ch5_Application_Management.html">
+            
+                
+                    <a href="../05-Web/Ch5_Application_Management.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Application Management
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05-Web/Ch5_Application_Store.html">
+            
+                
+                    <a href="../05-Web/Ch5_Application_Store.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Application Store
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06-Wuclass/Ch6_How_to_Create_a_WuClass_for_FBP_Editor.html">
+            
+                
+                    <a href="../06-Wuclass/Ch6_How_to_Create_a_WuClass_for_FBP_Editor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Chapter 6: Building New WuClasses
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06-Wuclass/guide_for_implementing_a_wuclass.html">
+            
+                
+                    <a href="../06-Wuclass/guide_for_implementing_a_wuclass.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        The WuKong Profile Framework
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06-Wuclass/Ch6_Add_a_New_Definition.html">
+            
+                
+                    <a href="../06-Wuclass/Ch6_Add_a_New_Definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Adding a New WuClas Definition
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06-Wuclass/Ch6_Implement_a_WuClass_by_Definition.html">
+            
+                
+                    <a href="../06-Wuclass/Ch6_Implement_a_WuClass_by_Definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Implementing a WuClass from Definition
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06-Wuclass/Ch6_WuClass_Samples_for_Grove_Modules.html">
+            
+                
+                    <a href="../06-Wuclass/Ch6_WuClass_Samples_for_Grove_Modules.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        WuClass Examples for Grove Modules
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07-Advanced/Ch7_Advanced_WuClass_Samples.html">
+            
+                
+                    <a href="../07-Advanced/Ch7_Advanced_WuClass_Samples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Chapter 7: Advanced WuClass Examples
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07-Advanced/Ch7_For_RealSense_Camera.html">
+            
+                
+                    <a href="../07-Advanced/Ch7_For_RealSense_Camera.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        TCP Server Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07-Advanced/Ch7_For_Philip_Hue_Series.html">
+            
+                
+                    <a href="../07-Advanced/Ch7_For_Philip_Hue_Series.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Web Client WuClass
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07-Advanced/Ch7_For_Web_Application.html">
+            
+                
+                    <a href="../07-Advanced/Ch7_For_Web_Application.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Web Server WuClass
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >The WuKong project</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="52-device-management">5.2 Device Management</h2>
+<p>In this section, we will show how to use the WuKong Master to manage devices.  </p>
+<ul>
+<li><p>Click on the <strong>Device Management</strong> top menu  </p>
+<p>   <img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/LED_Control_of_Ch4/201.png" alt=""></p>
+</li>
+<li><p>Adding devices to a WuKong system    </p>
+<ol>
+<li><p>To add a new device, click the <strong>Add Node</strong> button. This action will put  Master  in the <strong>ADD</strong> mode as the message shows &quot;ready to ADD&quot;. </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/Intel_Sound_of_Ch4/9.png" alt=""></p>
+</li>
+<li><p>Start the device program and let it enter the learning mode.  </p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> &lt;path_of_<span class="hljs-built_in">source</span>_code&gt;/wukong-darjeeling/wukong/gateway/udpwkpf/  
+python udpdevice_blink_led.py &lt;gip&gt; &lt;dip&gt;:&lt;port&gt;   
+<span class="hljs-comment">#&lt;gip&gt; is IP address of gateway program  </span>
+<span class="hljs-comment">#&lt;dip&gt; is IP address of device program&gt;  </span>
+<span class="hljs-comment">#&lt;port&gt; is an unique port number for this device program&gt;</span>
+
+<span class="hljs-comment">#Go to the folder of Python WuClass  </span>
+<span class="hljs-comment">#Execute Python device to be included to WuKong system</span>
+</code></pre>
+</li>
+<li><p>Press <strong>Stop to complete operation</strong> to let Master return to the <strong>STOP</strong> mode.    </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/Intel_Sound_of_Ch4/11.png" alt=""></p>
+</li>
+</ol>
+</li>
+<li><p>Removing devices from a WuKong system    </p>
+<ol>
+<li><p>To remove a device, click the <strong>Remove Node</strong> button. This action will put the master program in the <strong>DELETE</strong> mode with a message showing &quot;ready to DELETE&quot; </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/Intel_Sound_of_Ch4/35.png" alt=""></p>
+</li>
+<li><p>Restart the device program and let it to enter the learning mode. </p>
+<pre><code class="lang-bash">ctrl + c
+python udpdevice_blink_led.py &lt;gip&gt; &lt;dip&gt;:&lt;port&gt;  
+<span class="hljs-comment">#&lt;gip&gt; is IP address of gateway program  </span>
+<span class="hljs-comment">#&lt;dip&gt; is IP address of device program&gt;  </span>
+<span class="hljs-comment">#&lt;port&gt; is the identical port number as adding this device program&gt;  </span>
+ctrl + c  
+
+<span class="hljs-comment">#Go to the terminal of device program which is going to be removed    </span>
+<span class="hljs-comment">#Restart Python device program to exclude it from WuKong system  </span>
+<span class="hljs-comment">#Wait for the message showing &quot;STOP&quot; to terminate the program</span>
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/Intel_Sound_of_Ch4/36.png" alt=""></p>
+</li>
+<li><p>Click <strong>Stop to complete operation</strong> to let Master go back to the <strong>STOP</strong> mode.    </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/Intel_Sound_of_Ch4/37.png" alt=""></p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>How to set location for each device         </p>
+<p>Modify the device location and click the Set Location button to save it.</p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/LED_Control_of_Ch4/27.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>The <strong>Discover Nodes</strong> button can be used to show the current devices known to Master.   </p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP/21.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>The <strong>Details</strong> button can be used to  check the sensor profile on each device.</p>
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/LED_Control_of_Ch4/28.png" alt=""></p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../05-Web/Ch5_Network_Management.html" class="navigation navigation-prev " aria-label="Previous page: Network Management"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../05-Web/Ch5_Application_Management.html" class="navigation navigation-next " aria-label="Next page: Application Management"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

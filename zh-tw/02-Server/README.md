@@ -1,49 +1,58 @@
-## Sever Environment
+## 第二章：設定伺服器環境
 
-This chapter presents the instructions for preparing the WuKong development environment on a Linux-based computer. The instructions are tested on computers running **Ubuntu 14.04 LTS**. We plan to provide the installation guide for OSX and Windows in the future. Before then, a possible option for PC users is to install Virtualbox to run Ubuntu on their PC's. 
+這份章節呈現出在Linux-based的電腦上安裝發展悟空環境所需要的指令，
+這些指令在**Ubuntu 14.04 LTS**的電腦上執行，我們計畫在未來提供OSX和Windows的安裝指南。
+在那之前，對於PC使用者可能的選項就是安裝虛擬機器並執行Ubuntu。
 
-Four tools are required to run WuKong. Git is used to get the source code from the WuKong project. Java is necessary to run the Master software. Gradle is used for building the project.
-And Python is used for implementing the WuKong Profile Framework. You can skip any step if your server has already installed that specific software.
+執行悟空需要四個工具，Git可以取得悟空專案的原始碼，Java執行主控台(Master)軟體，
+Gradle可以建立專案，而Python是用來實作悟空屬性架構(Wukong Profile Framework)，如果你的伺服器已經安裝上述的軟體，你可以跳過任何一步。
 
-* **Install Git**   
-```bash
-sudo apt-get install git-core
-```
+* **安裝 Git**
+
+  ```bash
+  sudo apt-get install git-core
+  ```
   
-* **Install Java**  
-```bash
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update && sudo apt-get install oracle-java7-installer
-```
-  
-* **Install Gradle**  
+* **安裝 Java**
 
-  Download gradle 2.4 [HERE](https://services.gradle.org/distributions/gradle-2.4-all.zip) and extract it in a directory, for example, ~/gradle-2.4  
-  Append this gradle directory path to environment variable PATH as below.  
+  ```bash
+  sudo add-apt-repository ppa:webupd8team/java
+  sudo apt-get update && sudo apt-get install oracle-java7-installer
+  ```
+  
+* **安裝 Gradle**  
+
+  下載Gradle2.4 [（連結）](https://services.gradle.org/distributions/gradle-2.4-all.zip)
+  並且解壓縮到一個資料夾，例如：~/gradle-2.4，將Gradle的資料夾路徑加到環境變數，如下表示
   ```bash  
   vim ~/.bashrc  
   ```
-  Add 
+  加環境變數
+
   ```bash
   export PATH=$PATH:~/gradle-2.4/bin
+  ``` 
+  
+  添加環境變數在（bash startup）檔案中的最後一行，並使用source的指令去執行腳本（script）
+
+  ```bash  
+  source ~/.bashrc
+  ``` 
+
+* **安裝 Python 工具** 
+
+  ```bash  
+  sudo apt-get install libevent-dev  
+  sudo apt-get install python-dev  
+  sudo apt-get install python-setuptools  
+  sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev  
+  sudo apt-get install python-pip 
+  sudo pip install configobj simplejson gevent greenlet tornado jinja2 pyserial \
+  lxml  
+  sudo pip install netifaces  
+  sudo pip install python-cjson  
+  sudo apt-get install python-pyaudio  
   ```
-  after the last line of bash startup file ~/.bashrc, and then use the source command to execute the script  
-```bash  
-source ~/.bashrc
-``` 
 
-* **Install Python Tools**  
-```bash  
-sudo apt-get install libevent-dev  
-sudo apt-get install python-dev  
-sudo apt-get install python-setuptools  
-sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev  
-sudo apt-get install python-pip 
-sudo pip install configobj simplejson gevent greenlet tornado jinja2 pyserial \
-lxml  
-sudo pip install netifaces  
-sudo pip install python-cjson  
-sudo apt-get install python-pyaudio  
-```
+在下一章節，我們會呈現如何安裝物聯網裝置(例如Intel Edison,Galileo,樹莓派(Raspberry Pi2))，來實作出可以感測和控制環境裝置的應用程式(Application)。如果目前沒有上述的物聯網裝置，只要使用個人電腦和這章節所介紹的工具套件，就可以發展悟空的物聯網應用程式，範例將在[4.1節](../04-Examples/Music.md)展示。
 
-In the next chapter, we will show how to set up IoT devices (such as Intel Edison, Galileo and Raspberry Pi 2) to develop applications that can sense and control the physical environment. But using the toolchains in this chapter, you can already develop a WuKong-based IoT application using just your computer as shown in [here](../Examples/Music.md).

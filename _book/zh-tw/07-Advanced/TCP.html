@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>TCP伺服器連線 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="WuKong Project">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../07-Advanced/WebClient.html" />
+    
+    
+    <link rel="prev" href="../07-Advanced/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.1"
+        data-chapter-title="TCP伺服器連線"
+        data-filepath="07-Advanced/TCP.md"
+        data-basepath=".."
+        data-revision="Tue Jun 14 2016 17:49:05 GMT+0800 (CST)"
+        data-innerlanguage="zh-tw">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="version_history.html">
+            
+                
+                    <a href="../version_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        更新日誌
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第1章: 悟空中介軟體簡介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01-HowToUse/index.html">
+            
+                
+                    <a href="../01-HowToUse/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        如何使用這本書
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02-Server/index.html">
+            
+                
+                    <a href="../02-Server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第2章: 設定伺服器環境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03-Board/index.html">
+            
+                
+                    <a href="../03-Board/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第3章: 物聯網開發板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03-Board/Edison.html">
+            
+                
+                    <a href="../03-Board/Edison.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        設定Intel Edison
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-Board/Galileo.html">
+            
+                
+                    <a href="../03-Board/Galileo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        設定Intel Galileo Gen 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-Board/RPi.html">
+            
+                
+                    <a href="../03-Board/RPi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        設定Raspberry Pi Board
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04-Examples/index.html">
+            
+                
+                    <a href="../04-Examples/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第4章: 範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04-Examples/Music.html">
+            
+                
+                    <a href="../04-Examples/Music.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        電腦上的範例 - 音樂播放器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04-Examples/OP1/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP1/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="04-Examples/OP1/device.html">
+            
+                
+                    <a href="../04-Examples/OP1/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="04-Examples/OP1/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP1/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04-Examples/OP1/run.html">
+            
+                
+                    <a href="../04-Examples/OP1/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="04-Examples/OP1/issue.html">
+            
+                
+                    <a href="../04-Examples/OP1/issue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        尋找裝置問題
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04-Examples/LED.html">
+            
+                
+                    <a href="../04-Examples/LED.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        物聯網開發板 - 控制LED
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="04-Examples/OP2/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP2/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="04-Examples/OP2/device.html">
+            
+                
+                    <a href="../04-Examples/OP2/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="04-Examples/OP2/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP2/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="04-Examples/OP2/run.html">
+            
+                
+                    <a href="../04-Examples/OP2/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05-Web/index.html">
+            
+                
+                    <a href="../05-Web/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章: 悟空管理介面
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05-Web/Network.html">
+            
+                
+                    <a href="../05-Web/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        網路管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05-Web/Device.html">
+            
+                
+                    <a href="../05-Web/Device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        裝置管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05-Web/App.html">
+            
+                
+                    <a href="../05-Web/App.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        應用程式管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05-Web/AppStore.html">
+            
+                
+                    <a href="../05-Web/AppStore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        應用程式商店
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06-Wuclass/index.html">
+            
+                
+                    <a href="../06-Wuclass/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章: 動手寫悟空類別元件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06-Wuclass/Framework.html">
+            
+                
+                    <a href="../06-Wuclass/Framework.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        悟空屬性架構
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06-Wuclass/Definition.html">
+            
+                
+                    <a href="../06-Wuclass/Definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        定義
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06-Wuclass/Implement.html">
+            
+                
+                    <a href="../06-Wuclass/Implement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        實作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06-Wuclass/Grove.html">
+            
+                
+                    <a href="../06-Wuclass/Grove.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        範例 - Grove 模組
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07-Advanced/index.html">
+            
+                
+                    <a href="../07-Advanced/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章: 進階範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="7.1" data-path="07-Advanced/TCP.html">
+            
+                
+                    <a href="../07-Advanced/TCP.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        TCP伺服器連線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07-Advanced/WebClient.html">
+            
+                
+                    <a href="../07-Advanced/WebClient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Web客戶端WuClass
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07-Advanced/WebServer.html">
+            
+                
+                    <a href="../07-Advanced/WebServer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Web伺服器端WuClass
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="71-tcp&#x4F3A;&#x670D;&#x5668;&#x9023;&#x7DDA;">7.1 TCP&#x4F3A;&#x670D;&#x5668;&#x9023;&#x7DDA;</h2>
+<!--###7.1  TCP Server Connection-->  
+<p>&#x5728;&#x9019;&#x500B;&#x7AE0;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x4ECB;&#x7D39;&#x5982;&#x4F55;&#x5C07;Intel RealSense SDK&#x8207;&#x609F;&#x7A7A;&#x8CC7;&#x6599;&#x6D41;&#x7DE8;&#x7A0B;&#x7684;&#x7269;&#x4EF6;&#x900F;&#x904E;TCP&#x4E92;&#x76F8;&#x9023;&#x7DDA;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x4ECB;&#x7D39;&#x5982;&#x4F55;&#x5728;&#x609F;&#x7A7A;&#x8CC7;&#x6599;&#x6D41;&#x7DE8;&#x7A0B;&#x7684;&#x4ECB;&#x9762;&#x4E0A;&#xFF0C;&#x90E8;&#x7F72;&#x4F7F;&#x7528;RealSense&#x651D;&#x5F71;&#x6A5F;&#x7684;&#x7269;&#x806F;&#x7DB2;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x3002; 
+<!--In this section, we explain how to create a TCP connection between the Intel RealSense SDK and the WuKong FBP components. We also show an FBP application on how to adopt a RealSense camera in an IoT application.-->     </p>
+<ul>
+<li><h3 id="&#x5C07;intel-realsense&#x651D;&#x5F71;&#x6A5F;&#x8207;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x4E92;&#x76F8;&#x9023;&#x7DDA;">&#x5C07;Intel RealSense&#x651D;&#x5F71;&#x6A5F;&#x8207;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x4E92;&#x76F8;&#x9023;&#x7DDA;</h3>
+<!--* ###Connecting Intel RealSense Camera with WuKong-->   
+<ol>
+<li><p>Intel RealSense&#x651D;&#x5F71;&#x6A5F;&#x63D0;&#x4F9B;&#x4E86;&#x8A31;&#x591A;&#x5C08;&#x5C6C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x81C9;&#x90E8;&#x8FA8;&#x8B58;,&#x624B;&#x52E2;&#x8FA8;&#x8B58;,&#x8072;&#x97F3;&#x5206;&#x6790;&#x8207;&#x64F4;&#x589E;&#x5BE6;&#x5883;&#xFF0C;&#x5728;&#x9019;&#x500B;&#x7AE0;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EA;&#x4F7F;&#x7528;&#x624B;&#x52E2;&#x8FA8;&#x8B58;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x5728;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5167;&#x65B0;&#x589E;TCP&#x5BA2;&#x6236;&#x7AEF;(TCP Client)&#xFF0C;&#x800C;Intel RealSense&#x651D;&#x5F71;&#x6A5F;&#x7684;&#x624B;&#x52E2;&#x8FA8;&#x8B58;&#x7BC4;&#x4F8B;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5F9E;&#x5B83;&#x7684;SDK(<code>https://software.intel.com/en-us/realsense/home</code>)&#x53D6;&#x5F97;&#xFF0C;&#x7BC4;&#x4F8B;&#x7684;&#x6A94;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4F4D;&#x7F6E;&#x5728;Intel/RSSDK/sample/FF_HandsViewer/.</p>
+<!--  1.  The Intel RealSense camera provide many features for facial analysis, hand and finger tracking, sound processing, and augmented reality. In this example, we use only the feature of finger tracking to show how to add a TCP client in WuKong FBPs. Since RealSense has provided its SDK on the website https://software.intel.com/en-us/realsense/home, we simply use its HandsViewer code. The example is under the Intel folder, Intel/RSSDK/sample/FF_HandsViewer/.-->   
+</li>
+<li><p>&#x7232;&#x4E86;&#x8981;&#x5C07;RealSense&#x651D;&#x5F71;&#x6A5F;&#x6355;&#x6349;&#x7684;&#x624B;&#x52E2;&#x8A0A;&#x865F;&#x50B3;&#x7D66;&#x609F;&#x7A7A;&#x7269;&#x4EF6;&#xFF0C;&#x6211;&#x5011;&#x5728;&#x539F;&#x6709;&#x7684;&#x624B;&#x52E2;&#x8FA8;&#x8B58;&#x7BC4;&#x4F8B;&#x4E2D;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#x6A94;&#x6848;&#x8207;&#x51FD;&#x5F0F;&#xFF0C;&#x7528;&#x4F86;&#x5B9A;&#x7FA9;&#x5982;&#x4F55;&#x50B3;&#x9001;&#x8A0A;&#x865F;&#xFF0C;&#x9019;&#x4EFD;&#x6539;&#x7248;&#x7684;&#x7A0B;&#x5F0F;&#x53EF;&#x4EE5;&#x5F9E;&#x4EE5;&#x4E0B;&#x9023;&#x7D50;(<code>https://drive.google.com/open?id=0B31WAUDq3a3uZWZzb21iR0NwMDQ</code>)&#x53D6;&#x5F97;&#xFF0C;&#x82E5;&#x8981;&#x4F7F;&#x7528;&#x9019;&#x4EFD;&#x4E0B;&#x8F09;&#x7684;&#x7A0B;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x53D6;&#x4EE3;&#x6389;&#x9019;&#x500B;&#x8CC7;&#x6599;&#x593E;&#x4E0B;(Intel/RSSDK/sample/FF_HandsViewer/src)&#x7684;&#x539F;&#x6709;&#x6A94;&#x6848;&#xFF0C;&#x63A5;&#x8005;&#x7528;Microsoft Visual Studio&#x4F86;&#x6253;&#x958B;&#x540D;&#x7A31;&#x7232;FF_HandsViewer_vs201*&#x7684;SLN&#x6A94;&#x3002;&#x7576;RealSense&#x651D;&#x5F71;&#x6A5F;&#x9023;&#x63A5;&#x81F3;USB3.0&#x7684;&#x63D2;&#x69FD;&#x5F8C;&#xFF0C;&#x4FBF;&#x53EF;&#x57F7;&#x884C;SLN&#x6A94;&#xFF0C;&#x57F7;&#x884C;&#x5F8C;&#x8DF3;&#x51FA;&#x7684;&#x756B;&#x9762;&#x5982;&#x4E0B;&#xFF0C;&#x4EE3;&#x8868;&#x651D;&#x5F71;&#x6A5F;&#x5DF2;&#x5728;&#x63A5;&#x6536;&#x624B;&#x52E2;&#x8A0A;&#x865F;&#x4E26;&#x505A;&#x8FA8;&#x8B58;&#x5206;&#x6790;&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/realsense.png" alt="">
+&#x5728;HandsViewer.cpp&#x7684;&#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x65B0;&#x589E;TCP&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x9023;&#x7DDA;&#x662F;&#x767C;&#x751F;&#x5728;&#x7B2C;535&#x884C;&#xFF0C;&#x63A5;&#x8005;&#x5C07;&#x9019;&#x500B;TCP&#x6A94;&#x6848;&#x63CF;&#x8FF0;&#x5B50;(socket file descriptor)&#x50B3;&#x9001;&#x7D66;DisplayGesture&#x51FD;&#x5F0F;&#xFF0C;&#x9019;&#x500B;&#x51FD;&#x5F0F;&#x6703;&#x6301;&#x7E8C;&#x5730;&#x8FA8;&#x8A8D;&#x624B;&#x52E2;&#xFF0C;&#x4E26;&#x5C07;&#x4E8B;&#x524D;&#x5B9A;&#x7FA9;&#x597D;&#x7684;&#x624B;&#x52E2;&#x7684;&#x503C;&#x7528;SendMessage&#x50B3;&#x9001;&#x7D66;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x4E0A;&#x7684;TCP&#x4F3A;&#x670D;&#x5668;&#xFF0C;&#x5982;&#x6B64;&#x4E00;&#x4F86;&#xFF0C;&#x6536;&#x5230;&#x8A0A;&#x865F;&#x7684;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5C31;&#x53EF;&#x9032;&#x4E00;&#x6B65;&#x505A;&#x53CD;&#x61C9;&#x3002;   </p>
+<!-- In the HandsViewer.cpp file, a socket client is created on line 535 and passed to the DisplayGesture function which is responsible to identify gestures. After getting the gesture, the SendMessage function will send different pre-defined number to there TCP server. In that way, WuKong can respond to each gesture accordingly.-->  
+</li>
+<li><p>&#x800C;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x7684;&#x5BE6;&#x4F5C;&#x662F;&#x5728;udpdevice_mux_gesture_control.py&#xFF0C;&#x5982;&#x540C;&#x4E0B;&#x5716;&#x4E2D;&#x7684;RealSenseProtocol&#x985E;&#x5225;&#x6240;&#x793A;&#xFF0C;&#x9019;&#x500B;&#x985E;&#x5225;&#x4E3B;&#x8981;&#x7684;&#x529F;&#x80FD;&#x5728;&#x65BC;&#x5206;&#x6790;&#x8207;&#x53CD;&#x61C9;TCP&#x5BA2;&#x6236;&#x7AEF;&#x50B3;&#x56DE;&#x4F86;&#x7684;&#x8CC7;&#x6599;&#x3002;  </p>
+<!-- In WuKong, the TCP server is implemented in the udpdevice_mux_gesture_control.py, under the  RealSenseProtocol class as shown below. This class implements the user-defined network protocol parsing and handling for TCP servers, as an example of explaining how we can support different protocols in WuKong.-->        
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/realsense_protocol2.png" alt="">
+<img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no1.png" alt=""> &#x9019;&#x500B;&#x985E;&#x5225;&#x7E7C;&#x627F;&#x4E86;basic.LineReceiver&#xFF0C;&#x9019;&#x662F;Twisted&#x51FD;&#x5F0F;&#x5EAB;&#x5167;&#x7528;&#x4F86;&#x901A;&#x8A0A;&#x7684;&#x4E00;&#x7A2E;&#x5354;&#x5B9A;&#xFF0C;&#x5B83;&#x6709;&#x8A31;&#x591A;&#x7A2E;&#x63A5;&#x6536;TCP&#x9023;&#x7DDA;&#x8A0A;&#x865F;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x7A2E;&#x662F;lineReceived&#x6A21;&#x5F0F;&#xFF0C;&#x7528;lineReceived&#x51FD;&#x5F0F;&#x4F86;&#x63A5;&#x6536;&#x4E00;&#x6574;&#x884C;(lines)&#x7684;&#x6578;&#x64DA;&#x3002;&#x8A73;&#x7D30;&#x7684;&#x8CC7;&#x8A0A;&#x53EF;&#x4EE5;&#x53C3;&#x8003;&#x4EE5;&#x4E0B;&#x7DB2;&#x9801;&#xFF1A; <code>https://twistedmatrix.com/documents/9.0.0/api/twisted.protocols.basic.LineReceiver.html</code></p>
+<!-- ![](img/no1.png) This class inherits basic.LineReceiver which is a protocol that receives lines and/or raw data, depending on the mode. For further information, please refer to https://twistedmatrix.com/documents/9.0.0/api/twisted.protocols.basic.LineReceiver.html-->   
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no2.png" alt=""> &#x5728;lineReceived&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x6BCF;&#x63A5;&#x6536;&#x5230;&#x4E00;&#x7B46;&#x6578;&#x64DA;&#xFF0C;lineReceived&#x51FD;&#x5F0F;&#x5C31;&#x6703;&#x88AB;&#x547C;&#x53EB;(callback)&#xFF0C;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#xFF0C;lineReceived&#x6703;&#x63A5;&#x6536;&#x5230;&#x5176;&#x5B83;TCP&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x5C01;&#x5305;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x624B;&#x52E2;&#x8FA8;&#x8B58;&#x7BC4;&#x4F8B;(HandsViewer.cpp)&#x900F;&#x904E;SendMessag&#x51FD;&#x5F0F;&#x6240;&#x50B3;&#x905E;&#x7684;&#x3002;</p>
+<!-- ![](img/no2.png) In the lineReceived mode, each line received becomes a callback to lineReceived. In other words, data is the packet received from other TCP client. So data is a message sent by the SendMessage function in the HandsViewer.cpp file.-->     
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no3.png" alt="">&#x4E00;&#x65E6;&#x63A5;&#x6536;&#x5230;&#x6578;&#x64DA;&#xFF0C;&#x4FBF;&#x6703;&#x6309;&#x7167;&#x7A0B;&#x5F0F;&#x7684;&#x8A2D;&#x8A08;&#x88AB;&#x5206;&#x6790;&#x8207;&#x8655;&#x7406;&#x3002;&#x5728;&#x9019;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5B9A;&#x7FA9;&#x4E86;&#x6A21;&#x5F0F;(mode)&#x8207;&#x624B;&#x52E2;(gesture)&#x5169;&#x7A2E;&#x5C6C;&#x6027;&#xFF0C;&#x624B;&#x52E2;&#x7684;&#x503C;&#x662F;&#x5728;RealSense&#x7BC4;&#x4F8B;&#x4E2D;&#x6240;&#x4E8B;&#x5148;&#x5B9A;&#x7FA9;&#x597D;&#x7684;&#x6578;&#x5B57;&#xFF0C;&#x800C;&#x6A21;&#x5F0F;&#x5C6C;&#x6027;&#x7684;&#x8A2D;&#x8A08;&#x76EE;&#x7684;&#x662F;&#xFF0C;&#x7232;&#x4E86;&#x53EF;&#x4EE5;&#x8B93;&#x540C;&#x4E00;&#x7D44;&#x624B;&#x52E2;&#x904B;&#x7528;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5834;&#x666F;&#xFF0C;&#x6240;&#x4EE5;&#x6A21;&#x5F0F;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x5C31;&#x662F;&#x7528;&#x4F86;&#x505A;&#x5834;&#x666F;&#x7684;&#x5207;&#x63DB;&#xFF0C;&#x7531;&#x65BC;&#x5728;RealSense&#x7BC4;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x6355;&#x6349;&#x6BD4;&#x6578;&#x5B57;&#x7684;&#x624B;&#x52E2;&#xFF0C;&#x65BC;&#x662F;&#x6211;&#x5011;&#x9078;&#x64C7;&#x7528;&#x5B83;&#x5167;&#x5EFA;&#x7684;&#x8F15;&#x62CD;(Tap)&#x624B;&#x52E2;&#x4F86;&#x8868;&#x793A;&#x8981;&#x66F4;&#x63DB;&#x6A21;&#x5F0F;&#xFF0C;&#x4E26;&#x4E14;&#xFF0C;&#x8F15;&#x62CD;&#x624B;&#x52E2;&#x5F88;&#x50CF;&#x5728;&#x6309;&#x865B;&#x64EC;&#x7684;&#x6309;&#x9215;&#xFF0C;&#x624B;&#x52E2;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x4E5F;&#x8207;&#x6309;&#x9215;&#x4E00;&#x6A23;&#x662F;&#x5E03;&#x6797;&#x503C;(True oe False)&#x3002;  </p>
+<!-- ![](img/no3.png) Once received a message, the code can split and parse the message according to the design. In this WuClass, we define the mode and gesture properties. The meaning of gesture is straightforward, but the meaning of mode requires some explanation. Since RealSense doesn't provide the sample code to identify the number gesture, we cannot change mode simply by using the number gesture. One alternative is using True or False to indicate whether a user wants to change mode or not. The changing mode property corresponds to the "tap" gesture. When a user posts a tap gesture (similar to pressing a virtual button), the mode property will propagate a signal to next component.-->
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no4.png" alt="">&#x6BCF;&#x6B21;&#x7576;&#x6211;&#x5011;&#x63A5;&#x6536;&#x5230;&#x4E00;&#x7B46;&#x65B0;&#x6578;&#x64DA;&#x5F8C;&#xFF0C;&#x90FD;&#x8981;&#x7528;&#x9019;&#x5169;&#x884C;&#x7A0B;&#x5F0F;&#x5C07;&#x6A21;&#x5F0F;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x8A2D;&#x7232;False&#xFF0C;&#x5C07;&#x624B;&#x52E2;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x8A2D;&#x7232;&#x96F6;&#xFF0C;&#x56E0;&#x7232;&#x5982;&#x540C;&#x7B2C;&#x516D;&#x7AE0;&#x6240;&#x8FF0;&#x7684;&#x5C6C;&#x6027;&#x67B6;&#x69CB;&#xFF0C;&#x53EA;&#x6709;&#x7576;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x88AB;&#x5C6C;&#x6027;&#x67B6;&#x69CB;&#x767C;&#x73FE;&#x6709;&#x6539;&#x8B8A;&#x5F8C;&#xFF0C;&#x9019;&#x500B;&#x503C;&#x624D;&#x6703;&#x6309;&#x7167;&#x8CC7;&#x6599;&#x6D41;&#x7684;&#x4F86;&#x6E90;&#x8207;&#x76EE;&#x7684;&#x50B3;&#x905E;&#xFF0C;&#x82E5;&#x6C92;&#x6709;&#x91CD;&#x65B0;&#x8A2D;&#x5B9A;&#x9019;&#x5169;&#x500B;&#x5C6C;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x8F15;&#x62CD;&#x7684;&#x624B;&#x52E2;&#x5C07;&#x7121;&#x6CD5;&#x66F4;&#x63DB;&#x5834;&#x666F;&#xFF0C;&#x56E0;&#x7232;&#x8F15;&#x62CD;&#x624B;&#x52E2;&#x7684;&#x503C;&#x6BCF;&#x6B21;&#x90FD;&#x76F8;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x6703;&#x88AB;&#x5C6C;&#x6027;&#x67B6;&#x69CB;&#x50B3;&#x905E;&#x3002;   </p>
+<!-- ![](img/no4.png) Every time we receive new data, we have to reset mode and gesture before calling the setProperty function because WuKong adopts the even-driven model. If we don't reset the property, the same continual mode and gesture signal will be propagated only once.-->
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no5.png" alt="">&#x6BCF;&#x6B21;&#x6A21;&#x5F0F;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x90FD;&#x6703;&#x88AB;&#x5132;&#x5B58;&#xFF0C;&#x4E26;&#x7528;&#x65BC;&#x8DDF;&#x4E0B;&#x4E00;&#x56DE;&#x65B0;&#x7684;&#x503C;&#x505A;&#x6BD4;&#x8F03;&#x3002;</p>
+<!-- ![](img/no5.png) The previous state of mode property will be stored and compared to the new mode property, or otherwise we will count mode change incorrectly.-->    
+<p><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no6.png" alt="">&#x6700;&#x5F8C;&#xFF0C;&#x624B;&#x52E2;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x900F;&#x904E;&#x9019;&#x884C;&#x7A0B;&#x5F0F;&#x50B3;&#x905E;&#x81F3;&#x8CC7;&#x6599;&#x6D41;&#x7684;&#x76EE;&#x7684;&#x3002;  </p>
+<!-- ![](img/no6.png) Finally, the gesture value is propagated to the next component.-->      
+</li>
+</ol>
+</li>
+<li><h3 id="&#x90E8;&#x7F72;&#x4F7F;&#x7528;realsense&#x651D;&#x5F71;&#x6A5F;&#x7684;&#x7269;&#x806F;&#x7DB2;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;">&#x90E8;&#x7F72;&#x4F7F;&#x7528;RealSense&#x651D;&#x5F71;&#x6A5F;&#x7684;&#x7269;&#x806F;&#x7DB2;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;</h3>
+<!--* ###FBP Using Intel RealSense Camera-->  
+<p>&#x9019;&#x5F35;&#x5716;&#x53EF;&#x4EE5;&#x7528;&#x4F86;&#x8AAA;&#x660E;&#xFF0C;&#x5982;&#x4F55;&#x900F;&#x904E;&#x609F;&#x7A7A;&#x7CFB;&#x7D71;&#x90E8;&#x7F72;&#x4F7F;&#x7528;RealSense&#x651D;&#x5F71;&#x6A5F;&#x7684;&#x7269;&#x806F;&#x7DB2;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x3002;&#x5982;&#x540C;&#x4E0A;&#x8FF0;&#xFF0C;&#x5716;&#x4E2D;&#x7684;RealSense&#x5143;&#x4EF6;&#x6709;&#x6A21;&#x5F0F;&#x8207;&#x624B;&#x52E2;&#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x9019;&#x5169;&#x500B;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x6703;&#x9023;&#x63A5;&#x5230;&#x4E00;&#x500B;&#x4EA4;&#x63DB;&#x5668;(GestureSwitch)&#xFF0C;&#x6B64;&#x4EA4;&#x63DB;&#x5668;&#x6703;&#x4F7F;&#x7528;&#x6A21;&#x5F0F;&#x5C6C;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x4F86;&#x6C7A;&#x5B9A;&#x8981;&#x66F4;&#x65B0;&#x54EA;&#x4E00;&#x500B;&#x5834;&#x666F;&#x7684;&#x8CC7;&#x6599;&#x6D41;&#xFF0C;&#x5206;&#x5225;&#x6709;&#x5F71;&#x7247;&#x64AD;&#x653E;(GestureToVideoControl),&#x8996;&#x8A0A;&#x901A;&#x8A71;(GestureToHangoutControl)&#x8207;&#x71C8;&#x5149;&#x660E;&#x6697;&#x63A7;&#x5236;(GestureToBrightnessControl)&#xFF0C;&#x518D;&#x7531;&#x8A72;&#x5834;&#x666F;&#x5143;&#x4EF6;&#x6839;&#x64DA;&#x624B;&#x52E2;&#x5C6C;&#x6027;&#x7684;&#x503C;&#x4F86;&#x57F7;&#x884C;&#x61C9;&#x7528;&#x670D;&#x52D9;&#x3002;<br><img src="https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/FBP_RealSense.png" alt=""></p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../07-Advanced/index.html" class="navigation navigation-prev " aria-label="Previous page: 第7章: 進階範例"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../07-Advanced/WebClient.html" class="navigation navigation-next " aria-label="Next page: Web客戶端WuClass"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

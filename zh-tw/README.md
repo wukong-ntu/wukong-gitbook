@@ -1,19 +1,25 @@
-悟空計畫
-===
+<center><img src="logo.jpg"></center>
 
-<center><img src="assets/logo.jpg"></center>
+悟空(WuKong)計畫是在[Intel-臺大創新研究中心](http://ccc.ntu.edu.tw)發展的專案，致力於開發物聯網的中介軟體(IoT Middleware)。
 
-悟空計畫是在[Intel-臺大創新研究中心](http://ccc.ntu.edu.tw)發展的專案，致力於開發物聯網的中間件。
+悟空計畫的目的是讓使用者設計、開發硬體獨立的物聯網應用，因此使用者能夠更容易的配置並動態部署他們的應用到各式各樣的物聯網平台。
 
-The WuKong project at the [NTU-IoX Center](http://ccc.ntu.edu.tw)  has built an intelligent middleware for IoT systems. The goal of the WuKong project is to help users design and develop hardware-independent IoT applications, so that they can be easily configured and dynamically deployed on vendor-independent IoT platforms. 
+悟空物聯網中介軟體有以下特點:
 
-The WuKong IoT middleware has the following major features:
-* **Virtualized IoT Devices**: Virtualizing IoT devices allows hardware-independent application design and simplifies IoT services migration among devices without redefining applications. Consequently, one can deploy an IoT application on different hardware platforms without using hardware- and/or network-dependent application codes.
+* **虛擬化物聯網裝置**:
+虛擬化物聯網裝置使得應用程式能獨立於硬體層次，並且能夠簡化物聯網服務在不同裝置的遷移，而不需要重新設計應用程式。因此，使用者部署他們的應用到各式各樣的平台時，他們並不需要寫出與硬體、網路通訊相關的代碼。
 
-- **Flow-Based Programming environment**: WuKong provides a graphical flow-based programming (FBP) tool. In each FBP, a user can define the data and control flow to build an IoT application.  All the user has to do is to select the type of services from a predefined WuKong component library, drag and drop them on the programming canvas, and then connect them with directed links. The application flow diagram will then be used to map logical services onto appropriate physical  devices during application deployment.
+* **基於流程的編程環境**: 
+悟空提供了資料流編程(flow-based programming)。在此編程環境，使用者可以定義資料流與流程控制來搭建物聯網應用。
+使用者只需要從悟空組件庫選擇所需的組件，拖曳至編程的畫布上，接著使用單向鏈接串起各組件。應用程式的資料流在部署階段對應與編譯至合適的服務或是硬體設施。
 
-- **Heterogeneous and Virtual services**: The WuKong middleware provides virtual machines on heterogeneous platforms to simplify IoT application deployment and migration.  Virtual IoT services can also be implemented (in Python) to support Web-based data services or UI running on servers,  computers and smartphones. In addition, Darjeeling-based Java Virtual Machine is included in the WuKong middleware so that a system can dynamically add bytecodes on each device.
+* **異質與虛擬服務**:
+悟空中介軟體在不同的硬體平台上使用了虛擬機器來簡化應用的部署與遷移，也能夠實現虛擬化的物聯網服務(以Python實現)，來支援網路相關的資料服務或者使用者介面，以運行在微型裝置，電腦，或是智能手機。此外，基於Dajeerling的微型Java虛擬機也包含在悟空中介軟體中，因此系統能夠動態新增應用程式碼於微型裝置上。
 
-- **Deployment-time Service Mapping**: To support heterogeneous and constant-evolving hardware platforms, WuKong delays the binding between logical IoT services and physical IoT devices until deployment. Consequently, during application development, platform-dependent properties and configurations such as port assignment and pin assignment are minimized. The platform-dependent properties are collected by the WuKong Master when a device registers itself in a WuKong system. The Master will use these properties to produce a proper configuration and generate required executable code for each IoT application.
+* **部署時期服務映射**:
+為了支援異質與日新月異的硬體平台，悟空將軟體上的物聯網服務與硬體上的物聯網裝置的綁定延後到了部署時期。
+因此在開發應用時，平台相關屬性與配置（如阜號分配、針腳配置）都可被簡化。與平台相關的屬性會在註冊至悟空系統時被悟空主服務蒐集，主服務接著會使用這些屬性來生成適當的配置進而生成物聯網服務的可執行代碼。
 
-In this document, we present the instructions and examples on how to set up a WuKong environment and develop WuKong IoT applications. The document includes the description on the required system toolchains, the device hardware and firmware setup,  Master installation and operations, device sensing connections, and advanced IoT device support. All hardware and software used are openly available for access and installation. By making this project open, we hope to make IoT much easier to build and to deploy in the future.
+---
+
+在這份手冊中，我們使用了指令、範例來展示如何配置一個悟空環境以及開發悟空物聯網應用。這份文件包含了所需的系統工具套件的說明、硬體與韌體配置、主服務器的安裝及操作、感測裝置連接、以及進階物聯網裝置的支援。所有會用到的硬體及軟體都是公開的。透過公開這項計畫，我們希望未來能夠使得物聯網更容易開發及部署。

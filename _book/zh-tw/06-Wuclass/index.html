@@ -1,0 +1,738 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第6章: 動手寫悟空類別元件 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="WuKong Project">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../06-Wuclass/Framework.html" />
+    
+    
+    <link rel="prev" href="../05-Web/AppStore.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="6"
+        data-chapter-title="第6章: 動手寫悟空類別元件"
+        data-filepath="06-Wuclass/README.md"
+        data-basepath=".."
+        data-revision="Tue Jun 14 2016 17:49:05 GMT+0800 (CST)"
+        data-innerlanguage="zh-tw">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="version_history.html">
+            
+                
+                    <a href="../version_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        更新日誌
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第1章: 悟空中介軟體簡介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01-HowToUse/index.html">
+            
+                
+                    <a href="../01-HowToUse/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        如何使用這本書
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02-Server/index.html">
+            
+                
+                    <a href="../02-Server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第2章: 設定伺服器環境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03-Board/index.html">
+            
+                
+                    <a href="../03-Board/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第3章: 物聯網開發板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03-Board/Edison.html">
+            
+                
+                    <a href="../03-Board/Edison.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        設定Intel Edison
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-Board/Galileo.html">
+            
+                
+                    <a href="../03-Board/Galileo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        設定Intel Galileo Gen 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-Board/RPi.html">
+            
+                
+                    <a href="../03-Board/RPi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        設定Raspberry Pi Board
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04-Examples/index.html">
+            
+                
+                    <a href="../04-Examples/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第4章: 範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04-Examples/Music.html">
+            
+                
+                    <a href="../04-Examples/Music.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        電腦上的範例 - 音樂播放器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04-Examples/OP1/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP1/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="04-Examples/OP1/device.html">
+            
+                
+                    <a href="../04-Examples/OP1/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="04-Examples/OP1/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP1/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04-Examples/OP1/run.html">
+            
+                
+                    <a href="../04-Examples/OP1/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="04-Examples/OP1/issue.html">
+            
+                
+                    <a href="../04-Examples/OP1/issue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        尋找裝置問題
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04-Examples/LED.html">
+            
+                
+                    <a href="../04-Examples/LED.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        物聯網開發板 - 控制LED
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="04-Examples/OP2/master-gateway.html">
+            
+                
+                    <a href="../04-Examples/OP2/master-gateway.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        步驟1. 啟動主控台及通訊閘程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="04-Examples/OP2/device.html">
+            
+                
+                    <a href="../04-Examples/OP2/device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        步驟2. 新增裝置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="04-Examples/OP2/fbp.html">
+            
+                
+                    <a href="../04-Examples/OP2/fbp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        步驟3. 撰寫資料流程式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="04-Examples/OP2/run.html">
+            
+                
+                    <a href="../04-Examples/OP2/run.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        步驟4. 執行程式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05-Web/index.html">
+            
+                
+                    <a href="../05-Web/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章: 悟空管理介面
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05-Web/Network.html">
+            
+                
+                    <a href="../05-Web/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        網路管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05-Web/Device.html">
+            
+                
+                    <a href="../05-Web/Device.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        裝置管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05-Web/App.html">
+            
+                
+                    <a href="../05-Web/App.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        應用程式管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05-Web/AppStore.html">
+            
+                
+                    <a href="../05-Web/AppStore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        應用程式商店
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="6" data-path="06-Wuclass/index.html">
+            
+                
+                    <a href="../06-Wuclass/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章: 動手寫悟空類別元件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06-Wuclass/Framework.html">
+            
+                
+                    <a href="../06-Wuclass/Framework.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        悟空屬性架構
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06-Wuclass/Definition.html">
+            
+                
+                    <a href="../06-Wuclass/Definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        定義
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06-Wuclass/Implement.html">
+            
+                
+                    <a href="../06-Wuclass/Implement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        實作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06-Wuclass/Grove.html">
+            
+                
+                    <a href="../06-Wuclass/Grove.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        範例 - Grove 模組
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07-Advanced/index.html">
+            
+                
+                    <a href="../07-Advanced/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章: 進階範例
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07-Advanced/TCP.html">
+            
+                
+                    <a href="../07-Advanced/TCP.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        TCP伺服器連線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07-Advanced/WebClient.html">
+            
+                
+                    <a href="../07-Advanced/WebClient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Web客戶端WuClass
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07-Advanced/WebServer.html">
+            
+                
+                    <a href="../07-Advanced/WebServer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Web伺服器端WuClass
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x52D5;&#x624B;&#x5BEB;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5143;&#x4EF6;">&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x52D5;&#x624B;&#x5BEB;&#x609F;&#x7A7A;&#x985E;&#x5225;&#x5143;&#x4EF6;</h1>
+<p>&#x9019;&#x7AE0;&#x4E3B;&#x8981;&#x4ECB;&#x7D39;&#x5982;&#x4F55;&#x5728;&#x609F;&#x7A7A;&#x7CFB;&#x7D71;&#x4E2D;&#x8A2D;&#x8A08;&#x65B0;&#x7684;&#x8CC7;&#x6599;&#x6D41;&#x7DE8;&#x7A0B;(FBP)&#x5143;&#x4EF6;&#xFF0C;&#x8B93;&#x958B;&#x767C;&#x8005;&#x53EF;&#x4EE5;&#x6574;&#x5408;&#x65B0;&#x7684;&#x8EDF;&#x4EF6;&#x670D;&#x52D9;&#x8207;&#x65B0;&#x7684;&#x7269;&#x806F;&#x7DB2;&#x5546;&#x54C1;&#x81F3;&#x609F;&#x7A7A;&#x7CFB;&#x7D71;&#x3002;&#x4EE5;&#x4E0B;&#x5C07;&#x5206;&#x6210;&#x56DB;&#x500B;&#x5C0F;&#x7BC0;&#x4F86;&#x8AAA;&#x660E;&#xFF1A;   </p>
+<ol>
+<li><p>&#x7B2C;&#x4E00;&#x7BC0;&#x7232;&#x609F;&#x7A7A;&#x5C6C;&#x6027;&#x67B6;&#x69CB;(WuKong Profile Framework, WKPF)&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x89E3;&#x91CB;&#x609F;&#x7A7A;&#x7CFB;&#x7D71;&#x7684;&#x67B6;&#x69CB;&#xFF0C;&#x4EE5;&#x53CA;&#x9019;&#x500B;&#x67B6;&#x69CB;&#x5982;&#x4F55;&#x57F7;&#x884C;&#x5728;&#x55AE;&#x4E00;&#x88DD;&#x7F6E;&#x4E0A;&#x3002;  </p>
+</li>
+<li><p>&#x7B2C;&#x4E8C;&#x7BC0;&#x5C07;&#x8AAA;&#x660E;&#x5982;&#x4F55;&#x65B0;&#x589E;&#x4E00;&#x500B;&#x609F;&#x7A7A;&#x985E;&#x5225;(WuClass)&#x7684;&#x5B9A;&#x7FA9;&#x5728;&#x51FD;&#x5F0F;&#x5EAB;&#x4E2D;&#xFF0C;&#x56E0;&#x7232;&#x5728;&#x958B;&#x59CB;&#x5BE6;&#x4F5C;&#x5143;&#x4EF6;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x5148;&#x5B9A;&#x7FA9;&#x5143;&#x4EF6;&#x7684;&#x5C6C;&#x6027;&#x548C;&#x53C3;&#x6578;&#xFF0C;&#x4E26;&#x8B93;&#x6B64;&#x5143;&#x4EF6;&#x51FA;&#x73FE;&#x5728;&#x8CC7;&#x6599;&#x6D41;&#x7DE8;&#x7A0B;&#x4ECB;&#x9762;&#x7684;&#x6E05;&#x55AE;&#x4E0A;&#x3002;  </p>
+</li>
+<li><p>&#x63A5;&#x8005;&#xFF0C;&#x7B2C;&#x4E09;&#x7BC0;&#x5C07;&#x4ECB;&#x7D39;&#x5BE6;&#x4F5C;&#x985E;&#x5225;&#x5143;&#x4EF6;&#x7684;&#x6A23;&#x7248;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x6309;&#x7167;&#x6240;&#x5B9A;&#x7FA9;&#x7684;&#x5C6C;&#x6027;&#x548C;&#x53C3;&#x6578;&#x4F86;&#x5BE6;&#x4F5C;&#x6B64;&#x985E;&#x5225;&#x5143;&#x4EF6;&#xFF0C;&#x8B93;&#x958B;&#x767C;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x6A23;&#x7248;&#x4E2D;&#x65B0;&#x589E;&#x6240;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#x3002;  </p>
+</li>
+<li><p>&#x6700;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x4ECB;&#x7D39;&#x73FE;&#x6709;&#x7684;&#x7BC4;&#x4F8B;&#xFF0C;&#x9019;&#x4E9B;&#x7BC4;&#x4F8B;&#x6574;&#x5408;&#x4E86;&#x609F;&#x7A7A;&#x7CFB;&#x7D71;&#x8207;Grove&#x611F;&#x6E2C;&#x5668;&#x5165;&#x9580;&#x5957;&#x4EF6;&#xFF0C;&#x9019;&#x500B;&#x5957;&#x4EF6;&#x5728;&#x7269;&#x806F;&#x7DB2;&#x7684;&#x958B;&#x767C;&#x677F;&#x61C9;&#x7528;&#x4E0A;&#x5341;&#x5206;&#x666E;&#x904D;&#x3002;</p>
+</li>
+</ol>
+<!--#Chapter 6: Building New WuClasses -->   
+<!--IoT applcation  developers  may create new WuClasses in WuKong to enrich their application design and to connect to new hardware. In this chapter, we show how to create new WuClasses in four sections:   
+
+1. In the WuKong Profile Framework section, we explain the system architecture of the WuKong Profile Framework running on each device node.
+
+2. [Adding a New WuClass Definition](Ch6_Add_a_New_Definition.md) shows how to add a new WuClass definition in the WuKong WuClass library.  Once a new WuClass is defined, a new entry will be created in the available WuClasses panel when restarting  Master's FBP editor.   
+
+3. In the [Implementing a WuClass from Definition](Ch6_Implement_a_WuClass_by_Definition.md), we present the template of a WuKong device implementation.  
+
+   Inside of the template, developers can create specific functionalities for the WuClasses defined earlier.
+
+4. We show some examples on WuClasses built for Grove Sensor Modules. These modules are the most commonly used in many IoT applications.-->
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../05-Web/AppStore.html" class="navigation navigation-prev " aria-label="Previous page: 應用程式商店"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../06-Wuclass/Framework.html" class="navigation navigation-next " aria-label="Next page: 悟空屬性架構"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
