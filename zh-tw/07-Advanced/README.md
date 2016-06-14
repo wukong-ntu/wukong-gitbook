@@ -1,4 +1,4 @@
-#Chapter 7: 建立與連接非悟空系統(Non-WuKong)的服務
+#第7章: 建立與連接非悟空系統(Non-WuKong)的服務
 <!--##Chapter 7: Building Connections to Non-WuKong Services-->    
 
 在這章中，我們將透過一些範例來介紹如何建立與非悟空系統所提供的服務通訊，並在悟空類別中使用TCP封包(TCP socket)與網頁封包(Web socket)的通訊協定，有了這些通訊方式，我們就能將現有的資料流連接至外部的網頁服務以及市售的物聯網商品，以實現更有彈性與強大的分散式物聯網應用。
