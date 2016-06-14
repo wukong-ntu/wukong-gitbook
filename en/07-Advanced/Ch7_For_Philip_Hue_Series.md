@@ -17,7 +17,7 @@ vim udpdevice_philip_hue_*.py
 ```
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/hue_user.png)
 
-   3. Add udpdevice_philip_hue_\*.py  to WuKong according to [Section 5.2](../Ch5/Ch5_Device_Management.md).
+   3. Add udpdevice_philip_hue_\*.py  to WuKong according to [Section 5.2](../05-Web/Ch5_Device_Management.md).
    
    4. Create the FBP and set the initial value    
        
