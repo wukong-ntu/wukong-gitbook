@@ -8,16 +8,16 @@ We show three examples that uses TCP server and Web connections respectively. Th
 Some of these WuClass examples use device-specific APIs to invoke their services. Other examples show how to use various web-access protocols in IoT applications.
 To keep examples simple and easy to understand, some non-essential details may be omitted. The presentation is focused on how to create data flows with different types of products. 
 
-* [TCP Server WuClass  ](Ch6_For_RealSense_Camera.md)  
+* [TCP Server WuClass  ](Ch7_For_RealSense_Camera.md)  
   In this example, we use Twisted library to establish a TCP connection between Intel RealSense Camera and FBP components so that whenever the camera captures a new gesture, it will send the reading to WuKong. This design can apply to other external sensing devices as well. 
   
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/twisted_tcp_server_application2.png)   
 
-*  [Web Client WuClass ](Ch6_For_Philip_Hue_Series.md)  
+*  [Web Client WuClass ](Ch7_For_Philip_Hue_Series.md)  
    In this example, we use the Twisted Web library to send HTTP requests to a Philip Hue hub. When the Hue's hub server receives messages, it will control Hue lights accordingly and return a response. 
    
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/twisted_web_client_application2.png)
-*  [Web Server WuClass](Ch6_For_Web_Application.md)     
+*  [Web Server WuClass](Ch7_For_Web_Application.md)     
    In this example, we use the Twisted Web library to implement a Web server to receive URL requests from a browser application. The browser application provides a UI for users to control the output value of a UISlider component. In this way, we can provide HTTP APIs for developers to control WuKong applications. As long as they implement a Web client on their platform, they can use the HTTP API to make a connection to WuKong FBPs.  
    
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/twisted_web_server_application2.png)
