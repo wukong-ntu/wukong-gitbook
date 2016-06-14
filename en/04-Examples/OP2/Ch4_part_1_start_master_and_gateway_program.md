@@ -2,7 +2,7 @@
 
 The instructions in this section are slightly different from Section 4.1.1 since the gateway software in run on an IoT board (either Edison or Raspberry Pi). Therefore, after starting Master, we will  access the IoT board remotely to start the gateway program.   
 
-<font color="red">**Note:**</font> Before entering this section, if you have run the example in the last section, you need to follow the instructions in the [Section 4.1.5](../troubleshooting.md) to flush the cache files.
+<font color="red">**Note:**</font> Before entering this section, if you have run the example in the last section, you need to follow the instructions in the [Section 4.1.5](../discovery_issue.md) to flush the cache files.
 
 1. On the computer, download the source code from github as follows.  
 
