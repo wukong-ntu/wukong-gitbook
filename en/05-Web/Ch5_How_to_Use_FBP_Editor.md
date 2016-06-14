@@ -23,4 +23,4 @@
   4.  [Application Store](Ch5_Application_Store.md): To create the collection of  your FBP applications and make them available for sharing.    
 
  
- ![](FBP_editor_layout.png)
+ ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/05-Web/FBP_editor_layout.png)
