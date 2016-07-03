@@ -55,30 +55,18 @@ configure_edison --wifi
 
 * **Step 3. Firmware Update**
 
-  Make sure the firmware version of your board is the latest one. You can use the following command to check:  
-```bash
-configure_edison --version
-```
+  Please download this image, [iot-devkit-prof-dev-image-edison-20160315](https://downloadcenter.intel.com/downloads/eula/25871/Intel-IoT-Developer-Kit-Installer-Files?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25871%2Feng%2Fiot-devkit-prof-dev-image-edison-20160315.zip), for Edison. At the time of writing, this is a relative stable version.  
 
-  If it shows "159.devkit",  the firmware is a compatible one. If not, please see the following website on how to update its firmware:  
-  https://software.intel.com/en-us/iot/hardware/edison/downloads  
+  Then, choose and download the installer from the following website:  
+  `https://software.intel.com/en-us/iot/hardware/edison/downloads`  
+
+  Follow instructions of the installer and flash the firmware with previous downloaded image. 
   
 * **
 
 * **Step 4. Python Tool Installation**
-  * Copy the following instructions to `/etc/opkg/base-feeds.conf`
-```
-src/gz all http://repo.opkg.net/edison/repo/all
-src/gz edison http://repo.opkg.net/edison/repo/edison
-src/gz core2-32 http://repo.opkg.net/edison/repo/core2-32
-```
 
-  * Install **pip** and other tools  
-```bash  
-opkg update  
-opkg install python-pip
-opkg install sqlite3 
-opkg install git 
+  ```bash  
 pip install twisted 
 pip install python-cjson  
 pip install gevent  
