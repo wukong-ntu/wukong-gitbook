@@ -67,10 +67,7 @@ configure_edison --wifi
 * **Step 4. Python Tool Installation**
 
   ```bash  
-pip install twisted 
-pip install python-cjson  
-pip install gevent  
-pip install netifaces  
+pip install twisted python-cjson gevent netifaces  
 ```
 
 * **
