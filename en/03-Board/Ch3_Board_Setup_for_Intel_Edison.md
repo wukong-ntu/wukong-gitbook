@@ -55,7 +55,7 @@ configure_edison --wifi
 
 * **Step 3. Firmware Update**
 
-  Please download this image, [iot-devkit-prof-dev-image-edison-20160315](https://downloadcenter.intel.com/downloads/eula/25871/Intel-IoT-Developer-Kit-Installer-Files?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25871%2Feng%2Fiot-devkit-prof-dev-image-edison-20160315.zip), for Edison. At the time of writing, this is a relative stable version.  
+  Please download this image, [iot-devkit-prof-dev-image-edison-20160315](https://downloadmirror.intel.com/25871/eng/iot-devkit-prof-dev-image-edison-20160315.zip), for Edison. At the time of writing, this is a relative stable version.  
 
   Then, choose and download the installer from the following website:  
   `https://software.intel.com/en-us/iot/hardware/edison/downloads`  
