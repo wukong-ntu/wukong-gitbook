@@ -26,10 +26,9 @@
   5. 當我們透過瀏覽器傳值(number)80給UI旋轉電位器(較下的)時，從呼叫ShowAll的瀏覽器頁面中，可以看出來閥值比較器的比較值(value)改變了，接者，比較完這兩個屬性(threshold和value)後，就把比較的結果傳遞給數字標示物件。   
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/Logic/8.png)
  
-* ###實作UI旋轉電位器(UISlider)的悟空類別      
-  
-  UI旋轉電位器的悟空類別的實作如下圖，由於這個悟空類別更新的方式與之前介紹的悟空類別不同，是每當有瀏覽器呼叫的時候做更新，所以在撰寫UI旋轉電位器時，我們沒有使用更新函式(update function)，而是直接將訪問屬性儲存區的函式寫在下圖的render_GET函式。
-  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass2.png)  
+* ###實作UI旋轉電位器(UISlider)的悟空類別
+UI旋轉電位器的悟空類別的實作如下圖，由於這個悟空類別更新的方式與之前介紹的悟空類別不同，是每當有瀏覽器呼叫的時候做更新，所以在撰寫UI旋轉電位器時，我們沒有使用更新函式(update function)，而是直接將訪問屬性儲存區的函式寫在下圖的render_GET函式。
+![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass2.png)  
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/uislider_wuclass3.png)
 
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/07-Advanced/no1.png)render_GET函式的用途在於回應客戶端的HTTP GET請求，回傳的資料型態是字串，字串的內容視開發者實作而定。  
