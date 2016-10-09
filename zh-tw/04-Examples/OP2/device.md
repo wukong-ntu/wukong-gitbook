@@ -25,27 +25,29 @@
   ```bash
   cd <path_of_source_code>/wukong-darjeeling/wukong/gateway/udpwkpf/   
   ```   
-        
-6. 執行裝置程式 udpdevice_blink_led.py 。這個程式會啟動一個裝置並且從通訊閘取得一個裝置識別碼，之後在此裝置上產生兩個悟空物件，分別是 Button 跟 Light Actuator。
+
+6. 開啟udpwkpf_io_interface.py並修改12行的device_type定義，若使用Intel Edison板，將定義設定為**DEVICE_TYPE_MRAA**，若使用Raspberry Pi板，則將定義設定為**DEVICE_TYPE_RPI**，這項定義將會於第6-4章節做進一步說明。 
+     
+7. 執行裝置程式 udpdevice_blink_led.py 。這個程式會啟動一個裝置並且從通訊閘取得一個裝置識別碼，之後在此裝置上產生兩個悟空物件，分別是 Button 跟 Light Actuator。
   ```bash
   python udpdevice_blink_led.py <IP address of Gateway> \
   <IP address of IoT board>:<arbitrary port number>
   ```
       ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/04-Examples/LED_Control/fig4-2-4.png)
 
-7.  當主控台出現下列文字時，點擊 <font color="red">Stop to complete operation</font> 按鈕。
+8.  當主控台出現下列文字時，點擊 <font color="red">Stop to complete operation</font> 按鈕。
      
  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/04-Examples/LED_Control/24.png)
 
-8.  點擊 <font color="red">Discover Nodes</font> 按鈕以刷新裝置列表。  
+9.  點擊 <font color="red">Discover Nodes</font> 按鈕以刷新裝置列表。  
 
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/04-Examples/LED_Control/26.png)
 
-9. 更改裝置的位置並點擊 <font color="red">Set Location</font> 按鈕以儲存。
+10. 更改裝置的位置並點擊 <font color="red">Set Location</font> 按鈕以儲存。
 
   ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/04-Examples/LED_Control/27.png)
 
-10. 點擊 <font color="red">Details</font> 按鈕即可查看此 Python 裝置的傳感器資料。
+11. 點擊 <font color="red">Details</font> 按鈕即可查看此 Python 裝置的傳感器資料。
 
  ![](https://raw.githubusercontent.com/wukong-ntu/wukong-gitbook-figures/master/figures/04-Examples/LED_Control/28.png)
 
