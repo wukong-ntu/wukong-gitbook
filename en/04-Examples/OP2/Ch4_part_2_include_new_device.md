@@ -27,7 +27,7 @@
 	cd <path_of_source_code>/wukong-darjeeling/wukong/gateway/udpwkpf/   
 	```   
 
-6. Edit udpwkpf_io_interface.py and configure the device_type definition on line 12 to be **DEVICE_TYPE_MRAA**. This definition will be explained in the chapter 6.4.  
+6. Edit udpwkpf_io_interface.py and configure the device_type definition on **line 12**. If you use Intel Edison, configure this definition to be **DEVICE_TYPE_MRAA**. If you use Raspberry Pi, configure it to be **DEVICE_TYPE_RPI**. This definition will be further explained in the chapter 6.4.  
 
 7. Run the device program udpdevice_blink_led.py. This Python program will start the device to receive a node ID from the WuKong gateway, and then the two WuObjects, Button and Light Actuator, residing on the device.  
   ```bash
