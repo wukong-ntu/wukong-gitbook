@@ -5,6 +5,17 @@
 #### **悟空裝置的Python樣版**   
 以下爲悟空裝置的樣版，從樣版中可看到，悟空裝置會加入悟空類別(addClass)，並產生悟空物件(addObject)。目前所有的悟空裝置程式都存放在`https://github.com/wukong-m2m/wukong-darjeeling/tree/release0.4/wukong/gateway/udpwkpf`
 
+* ###**更新IoT開發板上的WuKongStandardLibrary.xml**   
+  請留意，若已按照前一小節所述，新定義了一個悟空類別在master端的WuKongStandardLibrary.xml的話，記得把這份檔案也複製到IoT開發板的相同位置，指令如下。      
+```bash
+#Copy from master to Intel Edison:
+cd <path_of_source_code>wukong/ComponentDefinitions/ 
+scp WuKongStandardLibrary.xml root@<IP address of Intel Edison>:<path_of_source_code_on_Intel_Edison>wukong/ComponentDefinitions/  
+#Copy from master to Raspberry Pi:
+cd <path_of_source_code>wukong/ComponentDefinitions/ 
+scp WuKongStandardLibrary.xml pi@<IP address of Raspberry Pi>:<path_of_source_code_on_Raspberry_Pi>wukong/ComponentDefinitions/  
+```
+
 ```python
   from twisted.internet import reactor
   from udpwkpf import WuClass, Device
