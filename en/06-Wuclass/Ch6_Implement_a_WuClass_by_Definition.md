@@ -3,6 +3,16 @@
 
 In this section, we use the LED-controlled FBP defined in  [Section 4.2](../04-Examples/Ch4_LED_Control_Using_Python_Program.md) as an example to explain the basic template of the Python program for each device. This template can be applied to Edison, Galileo and Raspberry Pi, to include some WuClass definitions of WuKongStandardLibrary.xml as mentioned in the previous section. Once an WuClass has been implemented according to the template, we can add this WuClass as a device in the same manner as [Section 5.2](../05-Web/Ch5_Device_Management.md).
 
+* ###**Update WuKongStandardLibrary.xml on the IoT Boards**   
+  Please note that if you write a new wuclass definition in the master as mentioned in the previous section, remember to copy WuKongStandardLibrary.xml in the master to the IoT boards.    
+```bash
+#Copy from master to Intel Edison:
+cd <path_of_source_code>wukong/ComponentDefinitions/ 
+scp WuKongStandardLibrary.xml root@<IP address of Intel Edison>:<path_of_source_code_on_Intel_Edison>wukong/ComponentDefinitions/  
+#Copy from master to Raspberry Pi:
+cd <path_of_source_code>wukong/ComponentDefinitions/ 
+scp WuKongStandardLibrary.xml pi@<IP address of Raspberry Pi>:<path_of_source_code_on_Raspberry_Pi>wukong/ComponentDefinitions/  
+```
 
 * ###**WuKong Device Python Template**  
 
