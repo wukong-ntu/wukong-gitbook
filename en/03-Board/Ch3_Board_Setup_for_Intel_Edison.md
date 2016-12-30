@@ -1,13 +1,13 @@
 ##3.1 Board Setup for Intel Edison
 <!---- (俊翰-testing, 振豪-format) ---->
 
-There are **four** steps to set up an Intel Edison as a WuKong device. 
+There are **five** steps to set up an Intel Edison as a WuKong device. 
 
 **Step 1. Board Hardware Assembly:** To assemble the Intel Edison module on its Arduino extension board.
 
-**Step 2. Board Configuration:** To setup a password on the Intel Edison so that we can use the ssh command to access the board.  
+**Step 2. Firmware Update:** To obtain the compatible Yocto image, which is 159.devkit at the time of this writing, to support a larger root partition size and better Python tools.  
 
-**Step 3. Firmware Update:** To obtain the compatible Yocto image, which is 159.devkit at the time of this writing, to support a larger root partition size and better Python tools.  
+**Step 3. Board Configuration:** To setup a password on the Intel Edison so that we can use the ssh command to access the board.  
 
 **Step 4. Python Tool Installation:** To install the required Python libraries for running WuKong.   
 
@@ -21,14 +21,27 @@ There are **four** steps to set up an Intel Edison as a WuKong device.
  
  Please see the following website on how to assemble an Intel Edison board:  
  https://software.intel.com/en-us/assembling-intel-edison-board-with-arduino-expansion-board  
- 
- After that, you can see the following website on how to set up a serial terminal to communicate with the board.  
- https://software.intel.com/en-us/setting-up-serial-terminal-intel-edison-board
- 
+  
+* **
+
+* **Step 2. Firmware Update**
+
+  Please download this image, [iot-devkit-prof-dev-image-edison-20160315](https://downloadmirror.intel.com/25871/eng/iot-devkit-prof-dev-image-edison-20160315.zip), for Edison. At the time of writing, this is a relative stable version.  
+
+  Then, choose and download the installer from the following website:   
+  
+  `https://software.intel.com/en-us/iot/hardware/edison/downloads`  
+
+  Follow instructions of the installer and flash the firmware with previous downloaded image. 
+
 
 * **
 
-* **Step 2. Board Configuration**
+* **Step 3. Board Configuration**
+
+  Before configuration, you can see the following website on how to set up a serial terminal to communicate with the board.  
+  
+  `https://software.intel.com/en-us/setting-up-serial-terminal-intel-edison-board`
 
   * To configure the board, enter the following command in the serial terminal opened in Step 1:
 ```bash
@@ -50,17 +63,6 @@ configure_edison --setup
 ```bash
 configure_edison --wifi
 ```
-
-* **
-
-* **Step 3. Firmware Update**
-
-  Please download this image, [iot-devkit-prof-dev-image-edison-20160315](https://downloadmirror.intel.com/25871/eng/iot-devkit-prof-dev-image-edison-20160315.zip), for Edison. At the time of writing, this is a relative stable version.  
-
-  Then, choose and download the installer from the following website:  
-  `https://software.intel.com/en-us/iot/hardware/edison/downloads`  
-
-  Follow instructions of the installer and flash the firmware with previous downloaded image. 
   
 * **
 
