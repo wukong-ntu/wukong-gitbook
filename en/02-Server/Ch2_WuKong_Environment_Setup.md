@@ -17,10 +17,10 @@ And Python is used for implementing the WuKong Profile Framework. You can skip a
 sudo apt-get install git-core
 ```
   
-* **Install Java**  
+* **Install Java (Updated 2017.11.13)**  
 ```bash
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update && sudo apt-get install oracle-java7-installer
+sudo add-apt-repository ppa:openjdk-r/ppa 
+sudo apt-get update && sudo apt-get install openjdk-7-jdk  
 ```
   
 * **Install Gradle**  
