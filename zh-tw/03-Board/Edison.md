@@ -102,7 +102,7 @@
 * **步驟五 下載悟空原始碼 \(已於2017.11.14更新\)**
   * 複製原始碼並下載到開發版上，放在你想要的資料夾路徑
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling.git
+    git clone -b release0.4 https://github.com/wukong-m2m/wukong-darjeeling.git
     ```
 
 
