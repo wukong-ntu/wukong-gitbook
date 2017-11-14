@@ -74,11 +74,11 @@ pip install twisted python-cjson gevent netifaces
 
 * **
 
-* **Step 5. Download WuKong Source Code**   
+* **Step 5. Download WuKong Source Code (Updated 2017.11.14)**   
   * Clone the source code and download to your preferred working directory on the IoT board.
 
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling
+    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling.git
     ```   
 
 
