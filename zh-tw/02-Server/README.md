@@ -41,7 +41,7 @@ Gradle可以建立專案，而Python是用來實作悟空屬性架構\(Wukong Pr
   source ~/.bashrc
   ```
 
-* **安裝 Python 工具**
+* **安裝 Python 工具 \(已於2017.11.14更新\)**
 
   ```bash
   sudo apt-get install libevent-dev  
