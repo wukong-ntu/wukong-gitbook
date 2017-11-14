@@ -7,7 +7,7 @@ The instructions in this section are slightly different from Section 4.1.1 since
 1. On the computer, download the source code from github as follows.  
 
   ```bash
-  git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling
+  git clone -b release0.4 https://github.com/wukong-m2m/wukong-darjeeling.git
   ```
 
 2. Build infuser
