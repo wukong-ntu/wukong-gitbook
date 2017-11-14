@@ -54,7 +54,8 @@ sudo apt-get install python-pip
 sudo pip install configobj simplejson gevent greenlet tornado jinja2 pyserial \
 lxml  
 sudo pip install netifaces  
-sudo pip install python-cjson  
+sudo pip install python-cjson
+sudo pip install twisted  
 sudo apt-get install python-pyaudio  
 ```
 
