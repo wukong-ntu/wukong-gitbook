@@ -78,7 +78,7 @@ pip install twisted python-cjson gevent netifaces
   * Clone the source code and download to your preferred working directory on the IoT board.
 
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling.git
+    git clone -b release0.4 https://github.com/wukong-m2m/wukong-darjeeling.git
     ```   
 
 
