@@ -5,10 +5,10 @@
 **步驟一 準備 Raspbian Linux 映像檔:**  
 準備可燒錄Raspbian Linux 映像檔的microSD卡
 
-**步驟二 開發版組裝:**   
+**步驟二 開發版組裝:**  
 組裝Raspberry Pi board及相關的配件
 
-**步驟三 開發版設定:**   
+**步驟三 開發版設定:**  
 設定Raspberry Pi的密碼
 
 **步驟四 Python 工具安裝:**  
@@ -138,7 +138,7 @@
 * **步驟五 下載悟空原始碼 \(已於2017.11.14更新\)**
   * 複製原始碼並下載到開發版上，放在你想要的資料夾路徑。
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling.git
+    git clone -b release0.4 https://github.com/wukong-m2m/wukong-darjeeling.git
     ```
 
 
