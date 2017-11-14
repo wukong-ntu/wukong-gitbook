@@ -5,7 +5,7 @@
 **步驟一 準備Linux 映像檔:**  
 準備可燒錄Linux 映像檔的microSD卡
 
-**步驟二 開發版組裝:**   
+**步驟二 開發版組裝:**  
 組裝Intel Galileo 開發版
 
 **步驟三 開發版設定:**  
@@ -48,7 +48,7 @@
 
 * **步驟三 開發版設定**
 
-  如果在步驟二你有推薦的WiFi模組，依照下列網頁的指示來安裝WiFi網卡並設定WiFi   
+  如果在步驟二你有推薦的WiFi模組，依照下列網頁的指示來安裝WiFi網卡並設定WiFi  
   [https://software.intel.com/en-us/get-started-galileo-linux-step4](https://software.intel.com/en-us/get-started-galileo-linux-step4)
 
   假如沒有，依照下列網頁的指示來設定乙太網路連線，不需要序列終端機，可以使用Arduino IDE來和開發版溝通。  
@@ -84,7 +84,7 @@
 * **步驟五 下載悟空原始碼 \(已於2017.11.14更新\)**
   * 複製原始碼並下載到開發版上，放在你想要的資料夾路徑
     ```bash
-    git clone -b release0.4 http://github.com/wukong-m2m/wukong-darjeeling.git
+    git clone -b release0.4 https://github.com/wukong-m2m/wukong-darjeeling.git
     ```
 
 
