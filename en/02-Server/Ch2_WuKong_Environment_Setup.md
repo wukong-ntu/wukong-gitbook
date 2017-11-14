@@ -44,7 +44,7 @@ sudo apt-get update && sudo apt-get install openjdk-7-jdk
   source ~/.bashrc
   ``` 
 
-* **Install Python Tools**  
+* **Install Python Tools (Updated 2017.11.14)**  
 ```bash  
 sudo apt-get install libevent-dev  
 sudo apt-get install python-dev  
